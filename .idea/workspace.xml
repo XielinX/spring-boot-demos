@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705dc8ec-39ea-4f8a-8b52-25b075120f09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/SpringBootEmailApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-email/src/main/resources/templates/Mail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/service/MailServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-email/src/main/resources/templates/TemplateEmail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-email/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-email/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/springbootemail/SpringBootEmailApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-email/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-email/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/springbootemail/SpringBootEmailApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/SpringBootEmailApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-helloworld/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-helloworld/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-helloworld/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-helloworld/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-helloworld/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/main/java/com/xlx/springboothelloworld/SpringBootHelloworldApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-helloworld/src/test/java/com/xlx/springboothelloworld/SpringBootHelloworldApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/service/MailServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/service/MailServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,29 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/service/MailServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="119" column="36" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="36" />
+            <state relative-caret-position="384">
+              <caret line="69" column="4" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -84,15 +49,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/spring-boot-helloworld/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/Controller/MailControlelr.java" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/MailApplication.java" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/Controller/MailControllelr.java" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/Controller/MailController.java" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/main/resources/templates/Mail.html" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailService.java" />
-        <option value="$PROJECT_DIR$/spring-boot-email/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-email/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-email/src/main/resources/templates/TemplateEmail.html" />
         <option value="$PROJECT_DIR$/spring-boot-email/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/service/MailServiceTest.java" />
       </list>
@@ -197,15 +163,6 @@
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
               <item name="spring-boot-email" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-email" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -269,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MailServiceTest.htmlMailTest">
+  <component name="RunManager" selected="JUnit.MailServiceTest.simpleMailTest">
     <configuration name="MailServiceTest.attachmentsMailTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="spring-boot-email" />
       <extension name="coverage">
@@ -378,7 +335,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562383864258</updated>
-      <workItem from="1562383866418" duration="10705000" />
+      <workItem from="1562383866418" duration="12196000" />
     </task>
     <servers />
   </component>
@@ -404,9 +361,24 @@
     <history-entry file="MailServiceTest_sendTemplateMail - 2019.07.06 at 16h 21m 45s.xml">
       <configuration name="MailServiceTest.sendTemplateMail" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MailServiceTest_simpleMailTest - 2019.07.06 at 16h 23m 23s.xml">
+      <configuration name="MailServiceTest.simpleMailTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MailServiceTest_htmlMailTest - 2019.07.06 at 16h 25m 31s.xml">
+      <configuration name="MailServiceTest.htmlMailTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10705000" />
+    <option name="totallyTimeSpent" value="12196000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -415,9 +387,9 @@
       <window_info id="Web" side_tool="true" />
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32876712" />
+      <window_info anchor="bottom" id="Messages" show_stripe_button="false" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Java Enterprise" />
@@ -426,11 +398,11 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.32876712" />
       <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Palette&#9;" />
@@ -455,13 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -513,16 +478,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/SpringBootEmailApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/resources/templates/TemplateEmail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
+        <state relative-caret-position="121">
           <caret line="119" column="36" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -530,24 +519,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-email/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="342">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/service/MailServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="384">
+          <caret line="69" column="4" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,6 +1,5 @@
 package com.xlx.email.service;
 
-import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,10 +25,9 @@ public class MailServiceTest {
 
   @Autowired
   private TemplateEngine templateEngine;
-
   @Test
   public void simpleMailTest() throws Exception {
-    //20238?第二次:2192
+    //20238?第二次:2192,第三次:3661
     mailService.sendSimpleMail("420923119@qq.com","MJ社区","尊敬的先生/女士:\n您好,恭喜您中奖500W");
   }
 
@@ -62,12 +60,11 @@ public class MailServiceTest {
 
 
   @Test
-  public void sendTemplateMail() {//报错
+  public void sendTemplateMail() {//运行不了,报错
     //创建邮件正文
     Context context = new Context();
     context.setVariable("id", "006");
     String emailContent = templateEngine.process("emailTemplate", context);
-
     mailService.sendHtmlMail("420923119@qq.com","主题：这是模板邮件",emailContent);
   }
 
