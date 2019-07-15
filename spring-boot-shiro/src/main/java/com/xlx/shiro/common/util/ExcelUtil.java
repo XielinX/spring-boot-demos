@@ -1,4 +1,4 @@
-package com.xlx.shiro.util;
+package com.xlx.shiro.common.util;
 
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.HorizontalAlignment;

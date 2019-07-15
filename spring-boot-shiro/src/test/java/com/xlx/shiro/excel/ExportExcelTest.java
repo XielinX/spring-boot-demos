@@ -1,6 +1,6 @@
-package com.xlx.shiro.ExportExcel;
+package com.xlx.shiro.excel;
 
-import com.xlx.shiro.util.ExcelUtil;
+import com.xlx.shiro.common.util.ExcelUtil;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,6 +22,7 @@ public class ExportExcelTest{
 
   @Test
   public void testExportDeptExcel() throws IOException {
+
 
     String sheetName = "department";
     String[] title = {"主键","部门名称","父节点","完整节点","可用","创建时间","修改时间"};

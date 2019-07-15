@@ -2,17 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705dc8ec-39ea-4f8a-8b52-25b075120f09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/Mapper/DeptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/util/ExcelUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/DeptDemo/DeptTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ExportExcel/ExportExcelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ShiroApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/advice/GlobalExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dto/ResultDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/exception/CustomizeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/exception/CustomizeExceptionEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/exception/ICustomizeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/generator/PropertyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/Mapper/DeptMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Dept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/util/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/ExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/DeptDemo/DeptTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ExportExcel/ExportExcelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/excel/ExportExcelTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,24 +39,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ExportExcel/ExportExcelTest.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/JwtUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/util/ExcelUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="-282">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,8 +63,19 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ssmshiro</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>shiro</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserMapper.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -82,15 +94,30 @@
         <option value="$PROJECT_DIR$/spring-boot-email/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/service/MailServiceTest.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ShiroApplicationTests.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/DeptDemo/DeptTest.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/Mapper/DeptMapper.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Dept.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/util/ExcelUtil.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ExportExcel/ExportExcelTest.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/generator/PropertyTest.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/generator/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/exception/CustomizeException.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dto/ResultDTO.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application-druid.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/advice/GlobalExceptionController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/JwtUtil.java" />
       </list>
     </option>
   </component>
@@ -113,9 +140,25 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-shiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-shiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="140" />
-    <option name="y" value="445" />
+    <option name="x" value="350" />
+    <option name="y" value="450" />
     <option name="width" value="1440" />
     <option name="height" value="1030" />
   </component>
@@ -128,6 +171,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,11 +184,111 @@
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
               <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,12 +299,25 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xlx.shiro.dto" />
+      <recent name="com.xlx.shiro.entity" />
+      <recent name="com.xlx.shiro.dao" />
+      <recent name="com.xlx.shiro.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\spring-boot-demos\spring-boot-shiro\src\main\resources\mapper" />
+      <recent name="E:\spring-boot-demos\spring-boot-shiro\src\main\java\com\xlx\shiro\exception" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,143 +331,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExportExcelTest.testExportDeptExcel">
-    <configuration name="DeptTest.testDept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ShiroApplication">
+    <configuration name="UserTest.testBase64" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="spring-boot-shiro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xlx.shiro.DeptDemo.*" />
+          <option name="PATTERN" value="com.xlx.shiro.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xlx.shiro.DeptDemo" />
-      <option name="MAIN_CLASS_NAME" value="com.xlx.shiro.DeptDemo.DeptTest" />
-      <option name="METHOD_NAME" value="testDept" />
+      <option name="PACKAGE_NAME" value="com.xlx.shiro.user" />
+      <option name="MAIN_CLASS_NAME" value="com.xlx.shiro.user.UserTest" />
+      <option name="METHOD_NAME" value="testBase64" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExportExcelTest.testExportDeptExcel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-shiro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xlx.shiro.ExportExcel.*" />
+          <option name="PATTERN" value="com.xlx.shiro.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xlx.shiro.ExportExcel" />
-      <option name="MAIN_CLASS_NAME" value="com.xlx.shiro.ExportExcel.ExportExcelTest" />
-      <option name="METHOD_NAME" value="testExportDeptExcel" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailServiceTest.attachmentsMailTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="spring-boot-email" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xlx.email.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xlx.email.service" />
-      <option name="MAIN_CLASS_NAME" value="com.xlx.email.service.MailServiceTest" />
-      <option name="METHOD_NAME" value="attachmentsMailTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailServiceTest.htmlMailTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="spring-boot-email" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xlx.email.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xlx.email.service" />
-      <option name="MAIN_CLASS_NAME" value="com.xlx.email.service.MailServiceTest" />
-      <option name="METHOD_NAME" value="htmlMailTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailServiceTest.inlineResourceMailTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="spring-boot-email" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xlx.email.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xlx.email.service" />
-      <option name="MAIN_CLASS_NAME" value="com.xlx.email.service.MailServiceTest" />
-      <option name="METHOD_NAME" value="inlineResourceMailTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailServiceTest.sendTemplateMail" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="spring-boot-email" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xlx.email.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xlx.email.service" />
-      <option name="MAIN_CLASS_NAME" value="com.xlx.email.service.MailServiceTest" />
-      <option name="METHOD_NAME" value="sendTemplateMail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailServiceTest.simpleMailTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="spring-boot-email" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xlx.email.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xlx.email.service" />
-      <option name="MAIN_CLASS_NAME" value="com.xlx.email.service.MailServiceTest" />
-      <option name="METHOD_NAME" value="simpleMailTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootEmailApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="spring-boot-email" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xlx.email.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xlx.email.SpringBootEmailApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="spring-boot-shiro" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xlx.shiro.ShiroApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.UserTest.testBase64" />
+      <item itemvalue="Spring Boot.ShiroApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ExportExcelTest.testExportDeptExcel" />
-        <item itemvalue="JUnit.DeptTest.testDept" />
+        <item itemvalue="Spring Boot.ShiroApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -329,29 +386,16 @@
       <option name="presentableId" value="Default" />
       <updated>1562383864258</updated>
       <workItem from="1562383866418" duration="16356000" />
-      <workItem from="1562482085451" duration="11266000" />
+      <workItem from="1562482085451" duration="11526000" />
+      <workItem from="1562568489278" duration="1398000" />
+      <workItem from="1562809969032" duration="612000" />
+      <workItem from="1562983049442" duration="9569000" />
+      <workItem from="1563105208492" duration="17081000" />
+      <workItem from="1563157651959" duration="17259000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MailServiceTest_simpleMailTest - 2019.07.06 at 16h 51m 03s.xml">
-      <configuration name="MailServiceTest.simpleMailTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DeptTest_testDept - 2019.07.07 at 15h 37m 04s.xml">
-      <configuration name="DeptTest.testDept" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DeptTest_testDept - 2019.07.07 at 15h 37m 30s.xml">
-      <configuration name="DeptTest.testDept" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExportExcelTest_testExportDeptExcel - 2019.07.07 at 22h 23m 19s.xml">
-      <configuration name="ExportExcelTest.testExportDeptExcel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExportExcelTest_testExportDeptExcel - 2019.07.07 at 22h 24m 17s.xml">
-      <configuration name="ExportExcelTest.testExportDeptExcel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExportExcelTest_testExportDeptExcel - 2019.07.07 at 22h 27m 07s.xml">
-      <configuration name="ExportExcelTest.testExportDeptExcel" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ExportExcelTest_testExportDeptExcel - 2019.07.07 at 22h 39m 03s.xml">
       <configuration name="ExportExcelTest.testExportDeptExcel" configurationId="JUnit" />
     </history-entry>
@@ -364,9 +408,27 @@
     <history-entry file="ExportExcelTest_testExportDeptExcel - 2019.07.07 at 22h 56m 51s.xml">
       <configuration name="ExportExcelTest.testExportDeptExcel" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ExportExcelTest_testExportDeptExcel - 2019.07.07 at 23h 00m 57s.xml">
+      <configuration name="ExportExcelTest.testExportDeptExcel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testBasea64 - 2019.07.15 at 14h 49m 40s.xml">
+      <configuration name="UserTest.testBasea64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testBasea64 - 2019.07.15 at 14h 52m 00s.xml">
+      <configuration name="UserTest.testBasea64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testBasea64 - 2019.07.15 at 14h 53m 19s.xml">
+      <configuration name="UserTest.testBasea64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testBase64 - 2019.07.15 at 14h 59m 17s.xml">
+      <configuration name="UserTest.testBase64" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testBase64 - 2019.07.15 at 15h 00m 14s.xml">
+      <configuration name="UserTest.testBase64" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27622000" />
+    <option name="totallyTimeSpent" value="73801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,7 +443,35 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25404313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22843666" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39878234" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32876712" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32951483" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19609164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -407,95 +497,16 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-helloworld/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/springbootemail/SpringBootEmailApplication.java" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/resources/templates/Mail.html" />
-    <entry file="jar://F:/tools/eclipse/jdk1.8/src.zip!/java/lang/System.java">
+    <entry file="jar://F:/tools/eclipse/jdk1.8/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="352" column="30" selection-start-line="352" selection-start-column="30" selection-end-line="352" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/Controller/MailController.java" />
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/SpringBootEmailApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar!/javax/mail/internet/MimeMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.1.8.RELEASE/spring-context-support-5.1.8.RELEASE.jar!/org/springframework/mail/javamail/MimeMessageHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/SpringBootEmailApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/resources/templates/TemplateEmail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/main/java/com/xlx/email/service/MailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="119" column="36" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/src/test/java/com/xlx/email/service/MailServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="65" column="37" lean-forward="true" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="36">
-            <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="1648">
+          <caret line="1005" column="19" selection-start-line="1005" selection-start-column="19" selection-end-line="1005" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -506,49 +517,238 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-email/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/ExcelUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="30" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="792">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://F:/tools/eclipse/jdk1.8/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        <state relative-caret-position="-8594">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/excel/ExportExcelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Dept.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/DeptDemo/DeptTest.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/generator/PropertyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.1.2/mybatis-plus-generator-3.1.2.jar!/com/baomidou/mybatisplus/generator/config/StrategyConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/DeptMapper.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.1.2/mybatis-plus-generator-3.1.2.jar!/com/baomidou/mybatisplus/generator/AutoGenerator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-generator/3.1.2/mybatis-plus-generator-3.1.2.jar!/com/baomidou/mybatisplus/generator/engine/AbstractTemplateEngine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3096">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/exception/ICustomizeException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/exception/CustomizeExceptionEnum.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/exception/CustomizeException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/generator/CodeGenerator.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application-druid.yml" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dto/ResultDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="270">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="198">
+          <caret line="63" column="274" selection-start-line="63" selection-start-column="274" selection-end-line="63" selection-end-column="274" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ShiroApplicationTests.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="262">
+          <caret line="526" column="40" selection-start-line="526" selection-start-column="16" selection-end-line="526" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/tools/eclipse/jdk1.8/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="929" column="19" selection-start-line="929" selection-start-column="19" selection-end-line="929" selection-end-column="19" />
           <folding>
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#37718#37719#0" expanded="true" />
+            <element signature="e#37754#37755#0" expanded="true" />
+            <element signature="e#39232#39233#0" expanded="true" />
+            <element signature="e#39292#39293#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/Mapper/DeptMapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="228">
+          <caret line="951" selection-start-line="951" selection-end-line="951" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.21/tomcat-embed-websocket-9.0.21-sources.jar!/org/apache/tomcat/websocket/server/WsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.21/tomcat-embed-core-9.0.21-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="171" column="46" lean-forward="true" selection-start-line="171" selection-start-column="46" selection-end-line="171" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="883" selection-start-line="883" selection-end-line="883" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/OncePerRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/filter/RequestContextFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/advice/GlobalExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="899" selection-start-line="899" selection-end-line="899" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/context/request/AbstractRequestAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar!/io/jsonwebtoken/JwtParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/tools/eclipse/jdk1.8/jre/lib/jce.jar!/javax/crypto/spec/SecretKeySpec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/tools/eclipse/jdk1.8/jre/lib/jce.jar!/javax/crypto/SecretKey.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -557,70 +757,107 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+        <state relative-caret-position="373">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0.jar!/org/apache/poi/ss/usermodel/HorizontalAlignment.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar!/io/jsonwebtoken/JwtBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="280">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0.jar!/org/apache/poi/ss/usermodel/CellStyle.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar!/io/jsonwebtoken/Jwt.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="144">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/4.1.0/poi-4.1.0.jar!/org/apache/poi/hssf/usermodel/HSSFCellStyle.class">
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/DeptDemo/DeptTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar!/io/jsonwebtoken/Claims.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar!/io/jsonwebtoken/Jwts.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+          <folding>
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="219" column="52" lean-forward="true" selection-start-line="219" selection-start-column="52" selection-end-line="219" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="30" column="94" lean-forward="true" selection-start-line="30" selection-start-column="94" selection-end-line="30" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Dept.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/tools/eclipse/jdk1.8/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1648">
-          <caret line="1005" column="19" selection-start-line="1005" selection-start-column="19" selection-end-line="1005" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/util/ExcelUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="288">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ExportExcel/ExportExcelTest.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/JwtUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="-282">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
