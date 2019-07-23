@@ -13,8 +13,8 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 @Data
 public class ResultDTO {
 
-  private static final String SUCCESS = "操作成功";
-  private static final String FAILURE = "操作失败";
+  private static final String SUCCESS = "OK";
+  private static final String FAILURE = "ERROR";
 
   // 状态码
   private Integer code;
@@ -40,7 +40,6 @@ public class ResultDTO {
 
   /**
    * 默认成功
-   * @return dto
    */
   public static ResultDTO success(){
     return new ResultDTO(200,ResultDTO.SUCCESS,null);
@@ -48,8 +47,6 @@ public class ResultDTO {
 
   /**
    * 自定义提示信息
-   * @param message msg
-   * @return dto
    */
   public static ResultDTO success(String message){
     return new ResultDTO(200,message,null);
@@ -57,8 +54,6 @@ public class ResultDTO {
 
   /**
    * 携带参数
-   * @param object obj
-   * @return dto
    */
   public static ResultDTO success(Object object){
     return new ResultDTO(200,ResultDTO.SUCCESS,object);
@@ -66,9 +61,6 @@ public class ResultDTO {
 
   /**
    * 自定义信息+携带参数
-   * @param message msg
-   * @param object obj
-   * @return dto
    */
   public static ResultDTO success(String message,Object object){
     return new ResultDTO(200,message,object);
@@ -76,25 +68,28 @@ public class ResultDTO {
 
   /**
    * 默认失败
-   * @return
    */
   public static ResultDTO failed(){
     return new ResultDTO(400,ResultDTO.FAILURE,null);
   }
 
+
+  /**
+   * 自定义状态码
+   */
   public static ResultDTO failed(Integer code){
     return new ResultDTO(code,ResultDTO.FAILURE,null);
   }
 
+  /**
+   * 自定义信息
+   */
   public static ResultDTO failed(String message){
     return new ResultDTO(400,message,null);
   }
 
   /**
-   *
-   * @param code
-   * @param message
-   * @return
+   * 状态码 + 提示信息
    */
   public static ResultDTO failed(Integer code,String message){
     return new ResultDTO(code,message,null);

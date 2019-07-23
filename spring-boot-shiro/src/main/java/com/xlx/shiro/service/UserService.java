@@ -22,38 +22,34 @@ public class UserService {
 
   /**
    * 根据帐号获取用户
-   * @param account 登录帐号
-   * @return user
+   * @param userName 登录帐号
    */
-  public User findUserByUserAccount(String account){
-    return userMapper.selectUserByUserAccount(account);
+  public User findUserByUserName(String userName){
+    return userMapper.selectUserByUserName(userName);
   }
 
   /**
    * 根据帐号获取该用户的权限集
-   * @param account 登录帐号
-   * @return set
+   * @param userName 登录帐号
    */
-  public Set<String> getPerminssions(String account){
-    return userMapper.selectPermissionsByUserAccount(account);
+  public Set<String> getPermissions(String userName){
+    return userMapper.selectPermissionsByUserName(userName);
   }
 
   /**
    * 根据帐号获取该用户的角色集
-   * @param account 登录帐号
-   * @return set
+   * @param userName 登录帐号
    */
-  public Set<String> getRoles(String account){
-    return userMapper.selectRolesByUserAccount(account);
+  public Set<String> getRoles(String userName){
+    return userMapper.selectRolesByUserName(userName);
   }
 
   /**
    * 登录成功更新登录时间
-   * @param userAccount .
+   * @param userName .
    * @param loginDate .
-   * @return .
    */
-  public boolean recordLoginDate(String userAccount, Date loginDate){
-    return userMapper.updateLoginDate(userAccount,loginDate) != 0;
+  public boolean recordLoginDate(String userName, Date loginDate){
+    return userMapper.updateLoginDate(userName,loginDate) != 0;
   }
 }

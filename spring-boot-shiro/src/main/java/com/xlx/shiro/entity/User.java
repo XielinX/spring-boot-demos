@@ -9,7 +9,7 @@ import java.util.Date;
 /**
  * 用户
  */
-public class User implements Serializable {
+public class User  implements Serializable {
 
     private Long userId; //主键
 
@@ -19,9 +19,9 @@ public class User implements Serializable {
 
     private String avatarUrl; //头像url
 
-    private String userAccount; //账号
-
     private String userName; //用户名
+
+    private String userReal; //真实姓名
 
     private String userPassword; //密码
 
@@ -53,32 +53,14 @@ public class User implements Serializable {
      * 盐 = 用户名 + salt
      * @return
      */
-    public String getCridentialSalt(){
-        return userName + salt;
+    public String getCredentialsSalt(){
+        return userReal + salt;
     }
 
     public User() {
         super();
     }
 
-    public User(Long userId, Long deptId, String avatarName, String avatarUrl, String userAccount, String userName, String userPassword, String salt, String token, String mail, String phone, Boolean locked, String loginIp, Date loginDate, Date gmtCreate, Date gmtModified) {
-        this.userId = userId;
-        this.deptId = deptId;
-        this.avatarName = avatarName;
-        this.avatarUrl = avatarUrl;
-        this.userAccount = userAccount;
-        this.userName = userName;
-        this.userPassword = userPassword;
-        this.salt = salt;
-        this.token = token;
-        this.mail = mail;
-        this.phone = phone;
-        this.locked = locked;
-        this.loginIp = loginIp;
-        this.loginDate = loginDate;
-        this.gmtCreate = gmtCreate;
-        this.gmtModified = gmtModified;
-    }
 
     public Long getUserId() {
         return userId;
@@ -112,20 +94,20 @@ public class User implements Serializable {
         this.avatarUrl = avatarUrl == null ? null : avatarUrl.trim();
     }
 
-    public String getUserAccount() {
-        return userAccount;
-    }
-
-    public void setUserAccount(String userAccount) {
-        this.userAccount = userAccount == null ? null : userAccount.trim();
-    }
-
     public String getUserName() {
         return userName;
     }
 
     public void setUserName(String userName) {
         this.userName = userName == null ? null : userName.trim();
+    }
+
+    public String getUserReal() {
+        return userReal;
+    }
+
+    public void setUserReal(String userReal) {
+        this.userReal = userReal == null ? null : userReal.trim();
     }
 
     public String getUserPassword() {

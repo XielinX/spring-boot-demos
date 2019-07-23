@@ -7,8 +7,8 @@
       <arg column="dept_id" javaType="java.lang.Long" jdbcType="BIGINT" />
       <arg column="avatar_name" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="avatar_url" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="user_account" javaType="java.lang.String" jdbcType="VARCHAR" />
-      <arg column="user_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="user_real" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="user_real" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="user_password" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="salt" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="token" javaType="java.lang.String" jdbcType="VARCHAR" />
@@ -22,7 +22,7 @@
     </constructor>
   </resultMap>
   <sql id="Base_Column_List">
-    user_id, dept_id, avatar_name, avatar_url, user_account, user_name, user_password, 
+    user_id, dept_id, avatar_name, avatar_url, user_name, user_real, user_password, 
     salt, token, mail, phone, locked, login_ip, login_date, gmt_create, gmt_modified
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
@@ -33,12 +33,14 @@
   </select>
 
   <!--根据帐号查询用户-->
-  <select id="selectUserByUserAccount" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectUserByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
-    from sys_users
-    where user_account = #{userAccount,jdbcType=VARCHAR}
+    from sys_user
+    where user_name = #{userAccount,jdbcType=VARCHAR}
   </select>
+  <select id="selectPermissionsByUserName" resultType="java.lang.String"></select>
+  <select id="selectRolesByUserName" resultType="java.lang.String"></select>
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from sys_users
@@ -46,7 +48,7 @@
   </delete>
   <insert id="insert" parameterType="com.xlx.shiro.entity.User">
     insert into sys_users (user_id, dept_id, avatar_name, 
-      avatar_url, user_account, user_name, 
+      avatar_url, user_name, user_real, 
       user_password, salt, token, 
       mail, phone, locked, login_ip, 
       login_date, gmt_create, gmt_modified
@@ -74,10 +76,10 @@
         avatar_url,
       </if>
       <if test="userAccount != null">
-        user_account,
+        user_name,
       </if>
       <if test="userName != null">
-        user_name,
+        user_real,
       </if>
       <if test="userPassword != null">
         user_password,
@@ -174,10 +176,10 @@
         avatar_url = #{avatarUrl,jdbcType=VARCHAR},
       </if>
       <if test="userAccount != null">
-        user_account = #{userAccount,jdbcType=VARCHAR},
+        user_name = #{userAccount,jdbcType=VARCHAR},
       </if>
       <if test="userName != null">
-        user_name = #{userName,jdbcType=VARCHAR},
+        user_real = #{userName,jdbcType=VARCHAR},
       </if>
       <if test="userPassword != null">
         user_password = #{userPassword,jdbcType=VARCHAR},
@@ -217,8 +219,8 @@
     set dept_id = #{deptId,jdbcType=BIGINT},
       avatar_name = #{avatarName,jdbcType=VARCHAR},
       avatar_url = #{avatarUrl,jdbcType=VARCHAR},
-      user_account = #{userAccount,jdbcType=VARCHAR},
-      user_name = #{userName,jdbcType=VARCHAR},
+      user_name = #{userAccount,jdbcType=VARCHAR},
+      user_real = #{userName,jdbcType=VARCHAR},
       user_password = #{userPassword,jdbcType=VARCHAR},
       salt = #{salt,jdbcType=VARCHAR},
       token = #{token,jdbcType=VARCHAR},
@@ -231,12 +233,11 @@
       gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
     where user_id = #{userId,jdbcType=BIGINT}
   </update>
-
-  <!--登录成功更新登录时间-->
+  <!--登录成功,修改登录时间 -->
   <update id="updateLoginDate" parameterType="com.xlx.shiro.entity.User">
-    update sys_users
-    set login_date = #{loginDate,jdbcType=TIMESTAMP}
-    where user_account = #{userAccount,jdbcType=VARCHAR}
-  </update>
+    update sys_user
+    set login_date = #{loginDate}
+    where user_real = #{userName}
 
+  </update>
 </mapper>
