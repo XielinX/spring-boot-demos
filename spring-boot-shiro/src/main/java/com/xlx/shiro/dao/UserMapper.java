@@ -4,6 +4,7 @@ import com.xlx.shiro.entity.User;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 public interface UserMapper {
@@ -28,4 +29,5 @@ public interface UserMapper {
 
     int updateLoginDate(@Param("userName") String userName, @Param("loginDate") Date loginDate);
 
+    List<User> selectUserByPage(@Param("offset") Integer offset,@Param("size") Integer size);
 }

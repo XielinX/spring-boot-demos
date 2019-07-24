@@ -39,10 +39,27 @@
     from sys_user
     where user_name = #{userAccount,jdbcType=VARCHAR}
   </select>
-  <select id="selectPermissionsByUserName" resultType="java.lang.String"></select>
-  <select id="selectRolesByUserName" resultType="java.lang.String"></select>
 
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+  <!--根据帐号获取该用户的权限集-->
+  <select id="selectPermissionsByUserName" resultType="java.lang.String">
+
+  </select>
+  <!--根据帐号获取该用户的角色集-->
+  <select id="selectRolesByUserName" resultType="java.lang.String">
+
+  </select>
+
+  <!--用户分页-->
+  <select id="selectUserByPage" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from sys_users
+    <if test="offset != null">
+
+    </if>
+  </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from sys_users
     where user_id = #{userId,jdbcType=BIGINT}
   </delete>

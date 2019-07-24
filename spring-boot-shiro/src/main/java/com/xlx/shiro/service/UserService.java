@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -52,4 +53,15 @@ public class UserService {
   public boolean recordLoginDate(String userName, Date loginDate){
     return userMapper.updateLoginDate(userName,loginDate) != 0;
   }
+
+  /**
+   * 分页
+   * @param offset 偏移量
+   * @param size 笔数
+   * @return list
+   */
+  public List<User> listUserPage(Integer offset,Integer size){
+    return userMapper.selectUserByPage(offset,size);
+  }
 }
+

@@ -10,12 +10,18 @@ spring:
     username: mango
     password: root5.7.22
 
+   thymeleaf:
+     model: HTML
+     encoding: utf-8
+     cache: false
+
+
 # MyBatis
 mybatis:
   # 搜索指定包别名
   typeAliasesPackage: com.xlx.shiro.entity
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
-  mapperLocations: classpath:mapper/*.xml
+  mapperLocations: classpath:mapper/**/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true
 
@@ -23,3 +29,7 @@ mybatis:
 logging:
   level:
     com.xlx.shiro: info
+    org.springframework: warn
+
+
+
