@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!--
+       以前的log4j:
+       1.root:根
+       2.Appender:何种形式?控制台?时间文件?尺寸文件
+       3.Layout:日志记录格式
+     -->
+
+
+    <!--日志存放路径-->
+    <property name="log.path" value="/home"/>
+    <!--日志输出格式-->
+    <property name="log.pattern"
+              value="%d{yyyy-MM-dd HH:mm:ss}  [%thread] %-5level --- %logger{50} : [%method,%line] - %msg%n"/>
+    <!--控制台输出-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!--格式-->
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+
+    <!--按时间记录日志-->
+    <appender name="file_info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--日志文件名称-->
+        <file>${log.path}/system-info.log</file>
+        <!--设置以时间记录-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--修改日志文件名: 文件名+时间,%i:i为变量-->
+            <fileNamePattern>${log.path}/system-info.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!--日志文件最大保存期限:3天-->
+            <maxHistory>3</maxHistory>
+            <!--限制日志文件的大小:最大5MB-->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>5MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <!--指定格式输出-->
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+    </appender>
+
+
+    <!--日志输出级别-->
+    <root lever="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
+
+

@@ -1,4 +1,4 @@
-package com.demo.springbootbasic.entity;
+package com.demo.basic.entity;
 
 /**
  * @author xielx on 2019/7/24

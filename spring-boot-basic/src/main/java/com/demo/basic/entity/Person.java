@@ -1,7 +1,8 @@
-package com.demo.springbootbasic.entity;
+package com.demo.basic.entity;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -15,9 +16,7 @@ import java.util.Map;
 //@ConfigurationProperties(prefix = "person")
 public class Person {
 
-	@Value("${person.firstName}")
 	private String firstName;
-	@Value("#{10*2}")
 	private Integer age;
 	private Boolean female;//男
 	private Date birth;

@@ -1,19 +1,8 @@
 server:
   port: 80
 
-
-
-
-person:
-  firstName: 张三
-  age: 20
-  female: true
-  birth: 1995/09/19
-  map: {k1: value1,key2: 中文}
-  list:
-    - 广东省
-    - 江西省
-  dog:
-    name: 旺财
-    age: 2
+logging:
+  level:
+    com.demo: debug
+    org.springframework: warn
 
