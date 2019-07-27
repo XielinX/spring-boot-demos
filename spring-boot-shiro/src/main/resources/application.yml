@@ -37,6 +37,7 @@ logging:
   level:
     com.xlx: info
     org.springframework: warn
+    org.thymeleaf: info
 
 
 

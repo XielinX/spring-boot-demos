@@ -1,6 +1,11 @@
 package com.xlx.shiro.dao;
 
 import com.xlx.shiro.entity.User;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Long userId);
@@ -14,4 +19,18 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+
+
+    User selectUserByUserName(@Param("userName") String userName);
+
+    Set<String> selectPermissionsByUserName(@Param("userName") String userName);
+
+    Set<String> selectRoleKeyByUserName(@Param("userName") String userName);
+
+    Set<String> selectRolesByUserName(@Param("userName") String userName);
+
+    int updateLoginDate(@Param("userName") String userName, @Param("loginDate") Date loginDate);
+
+    List<User> selectUserByPage(@Param("offset") Integer offset, @Param("size") Integer size);
 }

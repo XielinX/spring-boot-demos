@@ -56,11 +56,12 @@ public class UserService {
 
   /**
    * 分页
-   * @param offset 偏移量
+   * @param page 偏移量
    * @param size 笔数
    * @return list
    */
-  public List<User> listUserPage(Integer offset,Integer size){
+  public List<User> listUserPage(Integer page,Integer size){
+    int offset = (page - 1) * size;
     return userMapper.selectUserByPage(offset,size);
   }
 }

@@ -32,7 +32,7 @@ public class LoginController {
 		Subject subject = ShiroUtil.getSubject();
 		try {
 			subject.login(upToken);
-			return ResultDTO.success();
+			return ResultDTO.success(subject.getPrincipal());
 		} catch (AuthenticationException e) {
 			logger.error("登陆失败:[{}]", e.getMessage());
 			return ResultDTO.failed(e.getMessage(),loginDTO);
@@ -43,8 +43,8 @@ public class LoginController {
 	/**
 	 * 未授权
 	 */
-	@GetMapping("/unAuth")
-	public String unauthorized() {
+	@GetMapping("/unauthorized")
+	public String unAuthorized() {
 		return "unauthorized";
 	}
 }

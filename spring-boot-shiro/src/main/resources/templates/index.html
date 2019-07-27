@@ -37,7 +37,7 @@
             			<a class="menuItem" title="个人中心" th:href="@{/system/user/profile}"> 
             				<div class="hide" th:text="个人中心"></div>
 					        <div class="pull-left image">
-		                    	<img th:src="(${user.avatar} == '') ? @{/img/profile.jpg} : @{/profile/avatar/} + ${user.avatar}" class="img-circle" alt="User Image">
+		                    	<img th:src="${user.avatarUrl} ? @{/img/profile.jpg} : @{/profile/avatar/} + ${user.avatar}" class="img-circle" alt="User Image">
 					        </div>
 				        </a>
 				        <div class="pull-left info">
@@ -128,10 +128,10 @@
                                                                           页签操作<span class="caret"></span>
                 </button>
                 <ul role="menu" class="dropdown-menu dropdown-menu-right">
-                     <li><a class="tabCloseCurrent" href="javascript:void();">关闭当前</a></li>
-                     <li><a class="tabCloseOther" href="javascript:void();">关闭其他</a></li>
-					 <li><a class="tabCloseAll" href="javascript:void();">全部关闭</a></li>
-					 <li><a class="tabMaxCurrent" href="javascript:void();">全屏显示</a></li>
+                     <li><a class="tabCloseCurrent" href="javascript:void(0);">关闭当前</a></li>
+                     <li><a class="tabCloseOther" href="javascript:void(0);">关闭其他</a></li>
+					 <li><a class="tabCloseAll" href="javascript:void(0);">全部关闭</a></li>
+					 <li><a class="tabMaxCurrent" href="javascript:void(0);">全屏显示</a></li>
                 </ul>
             </div>
             <a href="#" class="roll-nav roll-right tabReload"><i class="fa fa-refresh"></i> 刷新</a>
@@ -144,7 +144,7 @@
                     th:src="@{/system/main}" frameborder="0" seamless></iframe>
         </div>
         <div class="footer">
-            <div class="pull-right">© [[${copyrightYear}]] RuoYi Copyright </div>
+            <div class="pull-right">&copy; 2019  Copyright </div>
         </div>
     </div>
     <!--右侧部分结束-->

@@ -55,7 +55,7 @@ public class JWTController {
 		}
 		//登录成功,更新登录时间?数据库插入有延迟1ms
 		Date loginDate = new Date();
-		log.info("记录登录时间:[{}]", DateUtil.formatString(loginDate));
+		log.info("记录登录时间:[{}]", DateUtil.formatDateToFullTime(loginDate));
 		userService.recordLoginDate(username, loginDate);
 		return ResultDTO.success("登录成功", JwtUtil.generateToken(username, loginDate));
 	}

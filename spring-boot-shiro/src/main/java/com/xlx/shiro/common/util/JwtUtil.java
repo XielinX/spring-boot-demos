@@ -59,9 +59,9 @@ public class JwtUtil {
     //payload的私有/自定义声明
     Map<String,Object> privateClaim = new HashMap<>();
     privateClaim.put("username",userName);
-    privateClaim.put("generateTime",DateUtil.formatString(generateTime));
+    privateClaim.put("generateTime",DateUtil.formatDateToFullTime(generateTime));
 
-    log.info("有效时长:[{}]",DateUtil.formatString(new Date(generateTime.getTime() + EXPIRATION_TIME)));
+    log.info("有效时长:[{}]",DateUtil.formatDateToFullTime(new Date(generateTime.getTime() + EXPIRATION_TIME)));
     String jwt = Jwts.builder()
             .setHeader(header)
             .setClaims(privateClaim)

@@ -13,18 +13,18 @@
       <arg column="permission" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="available" javaType="java.lang.Boolean" jdbcType="BIT" />
       <arg column="gmt_create" javaType="java.util.Date" jdbcType="TIMESTAMP" />
-      <arg column="gmt_modified" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="gmtModified" javaType="java.util.Date" jdbcType="TIMESTAMP" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List">
-    resource_id, name, icon, type, url, parent_id, parent_ids, permission, available, gmt_create,
-    gmt_modified
+    resource_id, name, icon, type, url, parent_id, parent_ids, permission, available, 
+    gmt_create, gmtModified
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from sys_resources
-    where resource_id = #{resourced,jdbcType=BIGINT}
+    where resource_id = #{resourceId,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from sys_resources
@@ -34,7 +34,7 @@
     insert into sys_resources (resource_id, name, icon, 
       type, url, parent_id, 
       parent_ids, permission, available, 
-      gmt_create, gmt_modified)
+      gmt_create, gmtModified)
     values (#{resourceId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{icon,jdbcType=VARCHAR}, 
       #{type,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, #{parentId,jdbcType=BIGINT}, 
       #{parentIds,jdbcType=VARCHAR}, #{permission,jdbcType=VARCHAR}, #{available,jdbcType=BIT}, 
@@ -74,7 +74,7 @@
         gmt_create,
       </if>
       <if test="gmtModified != null">
-        gmt_modified,
+        gmtModified,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -144,7 +144,7 @@
         gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
       </if>
       <if test="gmtModified != null">
-        gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+        gmtModified = #{gmtModified,jdbcType=TIMESTAMP},
       </if>
     </set>
     where resource_id = #{resourceId,jdbcType=BIGINT}
@@ -160,7 +160,7 @@
       permission = #{permission,jdbcType=VARCHAR},
       available = #{available,jdbcType=BIT},
       gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
-      gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
+      gmtModified = #{gmtModified,jdbcType=TIMESTAMP}
     where resource_id = #{resourceId,jdbcType=BIGINT}
   </update>
 </mapper>

@@ -24,15 +24,15 @@ public class GlobalExceptionController {
     HttpStatus status = getStatus(request);
     if (status.is4xxClientError()){
       //4
-      log.error("状态码:[{}],错误信息[{}]:" + status.value(),t.getMessage());
+      log.error("状态码:[{}],错误信息[{}]:" , status.value(),t.getMessage());
       return ResultDTO.failed(status.value(),t.getMessage());
     }else if (status.is5xxServerError()){
       //5
-      log.error("状态码:[{}],错误信息[{}]:" + status.value(),t.getMessage());
+      log.error("状态码:[{}],错误信息[{}]:" , status.value(),t.getMessage());
       return ResultDTO.failed(status.value(),t.getMessage());
     }else {
       //其他
-      log.error("状态码:[{}],错误信息[{}]:" + status.value(),t.getMessage());
+      log.error("状态码:[{}],错误信息[{}]:" , status.value(),t.getMessage());
       return ResultDTO.failed(status.value(),t.getMessage());
     }
   }

@@ -49,6 +49,7 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
 			passwordRetryCache.remove(username);
 		}
 
+		log.info("*密码匹配结果:[{}]",matches);
 		return matches;
 	}
 }

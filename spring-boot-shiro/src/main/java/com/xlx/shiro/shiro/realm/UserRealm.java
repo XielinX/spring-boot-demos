@@ -35,8 +35,8 @@ public class UserRealm extends AuthorizingRealm {
     String account = (String) principals.getPrimaryPrincipal();
     Set<String> roleSet = userService.getRoles(account);
     Set<String> permissionSet = userService.getPermissions(account);
-    logger.debug("用户[{}]的角色集[{}]:",account,roleSet);
-    logger.debug("用户[{}]的权限集[{}]",account,permissionSet);
+    logger.info("用户[{}]的角色集[{}]:",account,roleSet);
+    logger.info("用户[{}]的权限集[{}]",account,permissionSet);
 
     SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
     authorizationInfo.setRoles(roleSet);
@@ -54,12 +54,12 @@ public class UserRealm extends AuthorizingRealm {
     String username = upToken.getUsername();
     logger.info("userAccount:[{}]",username);
     User user = userService.findUserByUserName(username);
-    logger.debug("查询出的用户[{}]=" + user);
+    logger.info("查询出的用户[{}]=", user);
     if (user == null) {
       throw new UnauthenticatedException("帐号或密码错误");
     }
 
-    if (Boolean.FALSE.equals(user.getLocked())) {
+    if (Boolean.TRUE.equals(user.getLocked())) {
       throw new LockedAccountException("帐号被锁定,请联系管理员");
     }
 
