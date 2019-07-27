@@ -5,4 +5,7 @@ logging:
   level:
     com.demo: debug
     org.springframework: warn
-
+spring:
+  output:
+    ansi:
+      enabled: always

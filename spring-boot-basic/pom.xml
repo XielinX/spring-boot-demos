@@ -7,7 +7,7 @@
         <artifactId>spring-boot-demos</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.demo</groupId>
+    <!--<groupId>com.xlx</groupId>-->
     <artifactId>spring-boot-basic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-basic</name>
@@ -20,11 +20,27 @@
     </properties>
 
     <dependencies>
-
+        <!--springboot-web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--springboot-start-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <!--springboot-test-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--springboot-thymeleaf-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
     </dependencies>
 

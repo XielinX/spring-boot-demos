@@ -1,8 +1,6 @@
 package com.xlx.shiro.entity;
 
-import java.io.Serializable;
-
-public class RoleResource implements Serializable {
+public class RoleResource {
     private Long id;
 
     private Long roleId;

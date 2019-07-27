@@ -1,12 +1,8 @@
 package com.xlx.shiro.entity;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
-import java.io.Serializable;
 import java.util.Date;
 
-public class Resource implements Serializable {
+public class Resource {
     private Long resourceId;
 
     private String name;
@@ -27,11 +23,20 @@ public class Resource implements Serializable {
 
     private Date gmtCreate;
 
-    private Date gmtModified;
+    private Date gmtModified;
 
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
+    public Resource(Long resourceId, String name, String icon, String type, String url, Long parentId, String parentIds, String permission, Boolean available, Date gmtCreate, Date gmtModified) {
+        this.resourceId = resourceId;
+        this.name = name;
+        this.icon = icon;
+        this.type = type;
+        this.url = url;
+        this.parentId = parentId;
+        this.parentIds = parentIds;
+        this.permission = permission;
+        this.available = available;
+        this.gmtCreate = gmtCreate;
+        this.gmtModified = gmtModified;
     }
 
     public Resource() {
@@ -118,11 +123,11 @@ public class Resource implements Serializable {
         this.gmtCreate = gmtCreate;
     }
 
-    public Date getGmtModified() {
-        return gmtModified;
+    public Date getGmtModified() {
+        return gmtModified;
     }
 
-    public void setGmtModified(Date gmtModified) {
-        this.gmtModified = gmtModified;
+    public void setGmtModified(Date gmtModified) {
+        this.gmtModified = gmtModified;
     }
 }

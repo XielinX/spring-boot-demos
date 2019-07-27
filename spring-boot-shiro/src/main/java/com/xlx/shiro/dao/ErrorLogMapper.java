@@ -1,7 +1,5 @@
 package com.xlx.shiro.dao;
 
-import com.xlx.shiro.entity.ErrorLog;
-
 public interface ErrorLogMapper {
     int deleteByPrimaryKey(Long logId);
 

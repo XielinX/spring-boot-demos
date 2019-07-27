@@ -35,7 +35,7 @@ public class ShiroUtil {
 	 * @param credentialsSalt 盐(account + salt)
 	 * @return 16进制编码存储密码
 	 */
-	public static String encryptoPassword(String pwd,String credentialsSalt){
+	public static String encryptPassword(String pwd,String credentialsSalt){
 		SimpleHash simpleHash = new SimpleHash(algorithmName,pwd, ByteSource.Util.bytes(credentialsSalt),hashIterations);
 		return simpleHash.toHex();
 	}
@@ -49,9 +49,12 @@ public class ShiroUtil {
 		return SecurityUtils.getSubject();
 	}
 	public static void main(String[] args) {
-		String num = getHexRandomNumber();//62be4f0f92ee01d4558973f034f1a239
-		String en = encryptoPassword("12356xlx","G000926362be4f0f92ee01d4558973f034f1a239");
-		System.out.println(num);
+
+		String num = getHexRandomNumber();
+		System.out.println("随机数:" + num);//a7c8631308a0e7b59fd2cd78c083472b
+
+		String en = encryptPassword("admin","admin" + num);
+		//bcb0cf07c25cc0ff3a5677be4fd3d605
 		System.out.println(en);
 	}
 }

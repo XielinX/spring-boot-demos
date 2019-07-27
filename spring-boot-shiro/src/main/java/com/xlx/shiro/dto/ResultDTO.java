@@ -67,7 +67,9 @@ public class ResultDTO {
   }
 
   /**
+   * ************************
    * 默认失败
+   * ************************
    */
   public static ResultDTO failed(){
     return new ResultDTO(400,ResultDTO.FAILURE,null);
@@ -88,6 +90,14 @@ public class ResultDTO {
     return new ResultDTO(400,message,null);
   }
 
+  /**
+   * 提示信息+传参
+   * @param object 参数
+   * @return obj
+   */
+  public static ResultDTO failed(String msg,Object object){
+    return new ResultDTO(400,msg,object);
+  }
   /**
    * 状态码 + 提示信息
    */

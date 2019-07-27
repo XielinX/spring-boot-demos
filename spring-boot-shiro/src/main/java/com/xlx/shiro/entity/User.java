@@ -1,66 +1,68 @@
 package com.xlx.shiro.entity;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
-import java.io.Serializable;
 import java.util.Date;
 
-/**
- * 用户
- */
-public class User  implements Serializable {
+public class User {
+    private Long userId;
 
-    private Long userId; //主键
+    private Long deptId;
 
-    private Long deptId; // 部门id
+    private String avatarName;
 
-    private String avatarName; // 昵称
+    private String avatarUrl;
 
-    private String avatarUrl; //头像url
+    private String userName;
 
-    private String userName; //用户名
+    private String userReal;
 
-    private String userReal; //真实姓名
+    private String userPassword;
 
-    private String userPassword; //密码
+    private String salt;
 
-    private String salt; //盐值
+    private String token;
 
-    private String token; //cookie使用
+    private Integer gender;
 
-    private String mail; //邮箱
+    private Date birth;
 
-    private String phone; //电话
+    private String mail;
 
-    private Boolean locked = Boolean.FALSE; //不锁定
+    private String phone;
 
-    private String loginIp; // 登录ip
+    private Boolean locked;
 
-    private Date loginDate; //最后登录时间
+    private String loginIp;
 
-    private Date gmtCreate; //创建时间
+    private Date loginDate;
 
-    private Date gmtModified; //修改时间
+    private Date gmtCreate;
 
+    private Date gmtModified;
 
-    @Override
-    public String toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
-    }
-
-    /**
-     * 盐 = 用户名 + salt
-     * @return
-     */
-    public String getCredentialsSalt(){
-        return userReal + salt;
+    public User(Long userId, Long deptId, String avatarName, String avatarUrl, String userName, String userReal, String userPassword, String salt, String token, Integer gender, Date birth, String mail, String phone, Boolean locked, String loginIp, Date loginDate, Date gmtCreate, Date gmtModified) {
+        this.userId = userId;
+        this.deptId = deptId;
+        this.avatarName = avatarName;
+        this.avatarUrl = avatarUrl;
+        this.userName = userName;
+        this.userReal = userReal;
+        this.userPassword = userPassword;
+        this.salt = salt;
+        this.token = token;
+        this.gender = gender;
+        this.birth = birth;
+        this.mail = mail;
+        this.phone = phone;
+        this.locked = locked;
+        this.loginIp = loginIp;
+        this.loginDate = loginDate;
+        this.gmtCreate = gmtCreate;
+        this.gmtModified = gmtModified;
     }
 
     public User() {
         super();
     }
-
 
     public Long getUserId() {
         return userId;
@@ -132,6 +134,22 @@ public class User  implements Serializable {
 
     public void setToken(String token) {
         this.token = token == null ? null : token.trim();
+    }
+
+    public Integer getGender() {
+        return gender;
+    }
+
+    public void setGender(Integer gender) {
+        this.gender = gender;
+    }
+
+    public Date getBirth() {
+        return birth;
+    }
+
+    public void setBirth(Date birth) {
+        this.birth = birth;
     }
 
     public String getMail() {

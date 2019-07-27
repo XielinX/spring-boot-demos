@@ -1,7 +1,5 @@
 package com.xlx.shiro.dao;
 
-import com.xlx.shiro.entity.LoginLog;
-
 public interface LoginLogMapper {
     int deleteByPrimaryKey(Long logId);
 
