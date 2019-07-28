@@ -1,6 +1,8 @@
 package com.xlx.shiro.shiro.realm;
 
 import com.xlx.shiro.entity.User;
+import com.xlx.shiro.service.ResourceService;
+import com.xlx.shiro.service.RoleService;
 import com.xlx.shiro.service.UserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -23,24 +25,30 @@ import java.util.Set;
 public class UserRealm extends AuthorizingRealm {
 
   private static final Logger logger = LoggerFactory.getLogger(UserRealm.class);
+
+  @Resource
+  private RoleService roleService;
+
+  @Resource
+  private ResourceService resourceService;
+
   @Resource
   private UserService userService;
-
   /**
    * 权限认证
    */
   @Override
   protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
     logger.info("===================权限认证===============");
-    String account = (String) principals.getPrimaryPrincipal();
-    Set<String> roleSet = userService.getRoles(account);
-    Set<String> permissionSet = userService.getPermissions(account);
-    logger.info("用户[{}]的角色集[{}]:",account,roleSet);
-    logger.info("用户[{}]的权限集[{}]",account,permissionSet);
+    String username = (String) principals.getPrimaryPrincipal();
+    Set<String> roleSet = roleService.getRoles(username);
+    Set<String> permsSet = resourceService.getPermissions(username);
+    logger.info("用户[{}]的角色集[{}]:",username,roleSet);
+    logger.info("用户[{}]的权限集[{}]",username,permsSet);
 
     SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
     authorizationInfo.setRoles(roleSet);
-    authorizationInfo.setStringPermissions(permissionSet);
+    authorizationInfo.setStringPermissions(permsSet);
     return authorizationInfo;
   }
 

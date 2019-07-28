@@ -24,11 +24,9 @@ public interface UserMapper {
 
     User selectUserByUserName(@Param("userName") String userName);
 
-    Set<String> selectPermissionsByUserName(@Param("userName") String userName);
 
-    Set<String> selectRoleKeyByUserName(@Param("userName") String userName);
 
-    Set<String> selectRolesByUserName(@Param("userName") String userName);
+
 
     int updateLoginDate(@Param("userName") String userName, @Param("loginDate") Date loginDate);
 

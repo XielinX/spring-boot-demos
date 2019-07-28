@@ -12,7 +12,6 @@ import org.apache.shiro.session.mgt.SessionManager;
 import org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO;
 import org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator;
 import org.apache.shiro.session.mgt.eis.SessionDAO;
-import org.apache.shiro.session.mgt.quartz.QuartzSessionValidationScheduler;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -91,11 +90,12 @@ public class ShiroConfig {
 		UserRealm userRealm = new UserRealm();
 		//使用自定义的CredentialsMatcher
 		userRealm.setCredentialsMatcher(hashedCredentialsMatcher);
+		userRealm.setCachingEnabled(false);
 		//开启权限
-		userRealm.setAuthorizationCachingEnabled(true);
-		userRealm.setAuthorizationCacheName("authorizationCache");
-		userRealm.setAuthenticationCachingEnabled(true);
-		userRealm.setAuthenticationCacheName("authenticationCache");
+//		userRealm.setAuthorizationCachingEnabled(true);
+//		userRealm.setAuthorizationCacheName("authorizationCache");
+//		userRealm.setAuthenticationCachingEnabled(true);
+//		userRealm.setAuthenticationCacheName("authenticationCache");
 		return userRealm;
 	}
 
@@ -156,9 +156,6 @@ public class ShiroConfig {
 	}
 
 
-
-
-
 	/**
 	 * 会话ID生成器 SessionIdGenerator
 	 *
@@ -212,9 +209,7 @@ public class ShiroConfig {
 	 * @return obj
 	 */
 	@Bean(name = "sessionManager")
-	public DefaultWebSessionManager sessionManager(SessionDAO sessionDAO,
-																								 Cookie sessionIdCookie,
-																								 QuartzSessionValidationScheduler scheduler) {
+	public DefaultWebSessionManager sessionManager(SessionDAO sessionDAO, Cookie sessionIdCookie) {
 		logger.info("****sessionManager");
 		DefaultWebSessionManager defaultWebSessionManager = new DefaultWebSessionManager();
 		//设置全局session超时时间,单位/毫秒,此处30min
@@ -223,7 +218,7 @@ public class ShiroConfig {
 		defaultWebSessionManager.setSessionValidationSchedulerEnabled(true);
 
 		//Quartz会话定时刷新
-		defaultWebSessionManager.setSessionValidationScheduler(scheduler);
+		//defaultWebSessionManager.setSessionValidationScheduler(scheduler);
 		//SessionDAO
 		defaultWebSessionManager.setSessionDAO(sessionDAO);
 		//SessionIdCookie
@@ -232,7 +227,7 @@ public class ShiroConfig {
 		return defaultWebSessionManager;
 	}
 
-	@Bean(name = "sessionValidationScheduler")
+	/*@Bean(name = "sessionValidationScheduler")
 	public QuartzSessionValidationScheduler sessionValidationScheduler(DefaultWebSessionManager sessionManager) {
 		logger.info("*****sessionValidationScheduler");
 		QuartzSessionValidationScheduler quartz = new QuartzSessionValidationScheduler();
@@ -241,7 +236,7 @@ public class ShiroConfig {
 		//SessionManager
 		quartz.setSessionManager(sessionManager);
 		return quartz;
-	}
+	}*/
 
 	/**
 	 * 安全管理器 SecurityManager

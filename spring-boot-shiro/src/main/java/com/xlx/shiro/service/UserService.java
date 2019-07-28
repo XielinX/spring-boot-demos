@@ -29,21 +29,8 @@ public class UserService {
     return userMapper.selectUserByUserName(userName);
   }
 
-  /**
-   * 根据帐号获取该用户的权限集
-   * @param userName 登录帐号
-   */
-  public Set<String> getPermissions(String userName){
-    return userMapper.selectPermissionsByUserName(userName);
-  }
 
-  /**
-   * 根据帐号获取该用户的角色集
-   * @param userName 登录帐号
-   */
-  public Set<String> getRoles(String userName){
-    return userMapper.selectRolesByUserName(userName);
-  }
+
 
   /**
    * 登录成功更新登录时间

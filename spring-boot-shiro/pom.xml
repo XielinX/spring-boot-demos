@@ -79,11 +79,11 @@
 
 
         <!--quartz调度-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-quartz</artifactId>
             <version>1.4.1</version>
-        </dependency>
+        </dependency>-->
 
 
         <dependency>
