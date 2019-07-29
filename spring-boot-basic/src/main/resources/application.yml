@@ -1,2 +1,13 @@
 server:
   port: 80
+
+
+spring:
+  #国际化
+  messages:
+    basename: i18n/login
+  #模板
+  thymeleaf:
+    mode: HTML
+    encoding: UTF-8
+    cache: false

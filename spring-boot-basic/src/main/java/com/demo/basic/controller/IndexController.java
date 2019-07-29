@@ -1,5 +1,6 @@
 package com.demo.basic.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,12 +9,20 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author xielx on 2019/7/26
  */
-@RestController
+@Controller
 public class IndexController {
 
 
-	@GetMapping("/")
+	@GetMapping("/login")
+	public String home(){
+		return "login";
+	}
+
+	@GetMapping("/index")
 	public String index(){
 		return "index";
 	}
+
+
+
 }

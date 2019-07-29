@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,29 +10,62 @@
 
 	
 		<!-- Bootstrap core CSS -->
-		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="/static/css/public.css" />
+		<link href="/static/bootstrap/css/bootstrap.min.css" th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+		<link href="/static/css/public.css" th:href="@{/css/public.css}">
 		<!-- Custom styles for this template -->
-		<link href="/static/css/signin.css" rel="stylesheet">
+		<link href="/static/css/signin.css" th:href="@{/css/signin.css}" rel="stylesheet">
 	</head>
 	<body class="text-center">
-		<form class="form-signin">
-			<img class="mb-4" src="/static/img/bootstrap-solid.svg" alt="" width="72" height="72">
-			<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-			<label for="inputEmail" class="sr-only">Email address</label>
-			<input type="email" id="inputEmail" class="form-control" placeholder="Email address" autocomplete="off" required autofocus>
-			<label for="inputPassword" class="sr-only">Password</label>
-			<input type="password" id="inputPassword" class="form-control" placeholder="Password" autocomplete="off" required>
+		<form class="form-signin" th:action="@{/login}" th:method="post">
+			<img class="mb-4" src="/static/img/bootstrap-solid.svg" th:src="@{/img/bootstrap-solid.svg}" alt="">
+			<h1 class="h3 mb-3 font-weight-normal" id="tip" th:text="#{login.tip}">Please sign in</h1>
+			<p th:text="${msg}" style="color: red" th:if="${not #strings.isEmpty(msg)}"></p>
+			<label for="username" class="sr-only" th:text="#{login.user-name}">username</label>
+				<input type="text" id="username" name="username" class="form-control" placeholder="input you name" th:placeholder="#{login.user-name}" autocomplete="off" required autofocus>
+			<label for="password" class="sr-only">Password</label>
+			<input type="password" id="password" name="password"  class="form-control" placeholder="Password" th:placeholder="#{login.password}" autocomplete="off" required>
 			<div class="checkbox mb-3">
 				<label>
-					<input type="checkbox" value="remember-me"> Remember me
+					<input type="checkbox" id="remember" name="rememberMe"> [[#{login.remember-me}]]
 				</label>
 			</div>
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			<button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{login.btn}?:_" onclick="login()">Sign in</button>
 			<br />
-			<p class="mt-5 mb-3 text-muted">&copy;CopyRight 2017-2019</p>
-			<p class="mt-5 mb-3 text-muted"><a href="#">中文</a> | <a href="#">English</a></p>
-			
+			<p class="mt-5 mb-3 text-muted">&copy; CopyRight 2017-2019</p>
+			<p class="mt-5 mb-3 text-muted">
+				<a href="#" th:href="@{/login(l='zh_CN')}">中文
+				</a> | <a href="#" th:href="@{/login(l='en_US')}">English</a>
+			</p>
 		</form>
+			<script type="application/javascript" src="/static/js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+			<script th:inline="javascript">
+				function login() {
+
+
+					$("#tip").attr("display","none");
+					/*var username = document.getElementById("username");
+					var password = document.getElementById("password");
+					var rememberMe = document.getElementById("remember");
+					$.ajax({
+						url:'/login',
+						type:'post',
+						data:{username:username,password:password,rememberMe:rememberMe},
+						asyn:true,
+						dataType:'json',
+						success:function (result) {
+							if(result){
+								window.location.href="/index.html";
+							}else {
+
+							}
+
+						},
+						error:function (result) {
+							//
+						}
+
+					})*/
+				}
+			</script>
 	</body>
 </html>

@@ -2,41 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705dc8ec-39ea-4f8a-8b52-25b075120f09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/RoleMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/JWTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/JWTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/ResourceMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/RoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/RoleResourceMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Dept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/LogError.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/LogError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/LogLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/LogLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/RoleResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/RoleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/ResourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/credentials/RetryLimitHashedCredentialsMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/credentials/RetryLimitHashedCredentialsMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/realm/UserRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/realm/UserRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/DeptMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/LogErrorMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/LogLoginMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/ResourceMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RoleResourceMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserRoleMapper.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/webmvc/MyLocalResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/webmvc/MyWebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/i18n/login.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/i18n/login_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/i18n/login_zh_CN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-basic/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/MyWebMvcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/static/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/static/css/signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/static/ajax/libs/layer/layer.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/static/ajax/libs/layer/layer.min.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,13 +30,42 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/MenuMapper.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/interceptor/LoginInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="240">
+              <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-126">
+              <caret line="20" column="102" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="102" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,6 +109,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/login.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/LogErrorMapper.xml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserMapper.xml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/LogLoginMapper.xml" root0="SKIP_HIGHLIGHTING" />
@@ -107,46 +117,23 @@
     <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/MenuMapper.xml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RoleMenuMapper.xml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/DeptMapper.xml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/ResourceService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/MenuService.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/LifecycleBeanPostProcessorConfig.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/ShiroUtil.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dto/LoginDTO.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dto/ResultDTO.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/advice/GlobalExceptionController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/main.html" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/JWTController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/JwtUtil.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/DateUtil.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/RoleController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/ResourceController.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Resource.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java" />
-        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/ehcache.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/ShiroApplicationTests.java" />
         <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/entity/Person.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/RoleService.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/realm/UserRealm.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/credentials/RetryLimitHashedCredentialsMatcher.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/ResourceMapper.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/ResourceMapper.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/ResourceService.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java" />
@@ -159,10 +146,33 @@
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/MenuMapper.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Menu.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/MenuMapper.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/RoleMapper.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RoleMapper.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/MenuMapper.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/ResourceService.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/realm/UserRealm.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/MyWebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/msg/login.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/MyLocalResolver.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/static/css/signin.css" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/webmvc/MyWebMvcConfigureAdapt.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/i18n/login.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/i18n/login_zh_CN.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/webmvc/MyLocalResolver.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/webmvc/MyWebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/interceptor/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/login.html" />
       </list>
     </option>
   </component>
@@ -213,8 +223,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+    <option name="x" value="337" />
+    <option name="y" value="62" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -236,52 +246,62 @@
             <path>
               <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="webmvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -289,11 +309,20 @@
             <path>
               <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,7 +379,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ShiroApplication">
+  <component name="RunManager" selected="Spring Boot.BasicApplication">
     <configuration name="Base64Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-shiro" />
       <extension name="coverage">
@@ -416,9 +445,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.BasicApplication" />
         <item itemvalue="Spring Boot.ShiroApplication" />
         <item itemvalue="JUnit.Base64Test" />
-        <item itemvalue="Spring Boot.BasicApplication" />
         <item itemvalue="JUnit.BasicApplicationTests.testAoc" />
       </list>
     </recent_temporary>
@@ -459,7 +488,7 @@
       <workItem from="1564279592142" duration="1884000" />
       <workItem from="1564305780960" duration="641000" />
       <workItem from="1564365344094" duration="4891000" />
-      <workItem from="1564382313990" duration="14019000" />
+      <workItem from="1564382313990" duration="29153000" />
     </task>
     <servers />
   </component>
@@ -496,7 +525,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218164000" />
+    <option name="totallyTimeSpent" value="233298000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -517,8 +546,8 @@
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3561644" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3561644" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932614" weight="0.304414" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -575,390 +604,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/ehcache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/MyWebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/entity/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/entity/Dog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/BasicApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/shiro/Base64Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="337" selection-start-line="337" selection-end-line="337" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.1/shiro-core-1.4.1.jar!/org/apache/shiro/subject/Subject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.1/shiro-core-1.4.1.jar!/org/apache/shiro/authc/SimpleAuthenticationInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/realm/UserRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="43" column="56" lean-forward="true" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
-          <folding>
-            <element signature="e#3023#3024#0" expanded="true" />
-            <element signature="e#3061#3062#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/credentials/RetryLimitHashedCredentialsMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/static/img/profile.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/static/img/locked.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/static/img/user.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="28" column="57" lean-forward="true" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="59" column="54" lean-forward="true" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/ResourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/ResourceMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="129" column="34" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/ResourceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/UserRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/RoleMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/LogError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/LogLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="97" column="62" selection-start-line="97" selection-start-column="62" selection-end-line="97" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#1500#1501#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
-            <element signature="e#1625#1626#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1692#1693#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1799#1800#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
-            <element signature="e#1869#1870#0" expanded="true" />
-            <element signature="e#1921#1922#0" expanded="true" />
-            <element signature="e#2000#2001#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2068#2069#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2229#2230#0" expanded="true" />
-            <element signature="e#2260#2261#0" expanded="true" />
-            <element signature="e#2308#2309#0" expanded="true" />
-            <element signature="e#2381#2382#0" expanded="true" />
-            <element signature="e#2416#2417#0" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2495#2496#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-            <element signature="e#2607#2608#0" expanded="true" />
-            <element signature="e#2642#2643#0" expanded="true" />
-            <element signature="e#2814#2815#0" expanded="true" />
-            <element signature="e#2841#2842#0" expanded="true" />
-            <element signature="e#2881#2882#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#2974#2975#0" expanded="true" />
-            <element signature="e#3002#3003#0" expanded="true" />
-            <element signature="e#3044#3045#0" expanded="true" />
-            <element signature="e#3108#3109#0" expanded="true" />
-            <element signature="e#3142#3143#0" expanded="true" />
-            <element signature="e#3171#3172#0" expanded="true" />
-            <element signature="e#3216#3217#0" expanded="true" />
-            <element signature="e#3252#3253#0" expanded="true" />
-            <element signature="e#3282#3283#0" expanded="true" />
-            <element signature="e#3310#3311#0" expanded="true" />
-            <element signature="e#3350#3351#0" expanded="true" />
-            <element signature="e#3384#3385#0" expanded="true" />
-            <element signature="e#3415#3416#0" expanded="true" />
-            <element signature="e#3442#3443#0" expanded="true" />
-            <element signature="e#3482#3483#0" expanded="true" />
-            <element signature="e#3543#3544#0" expanded="true" />
-            <element signature="e#3575#3576#0" expanded="true" />
-            <element signature="e#3603#3604#0" expanded="true" />
-            <element signature="e#3645#3646#0" expanded="true" />
-            <element signature="e#3709#3710#0" expanded="true" />
-            <element signature="e#3743#3744#0" expanded="true" />
-            <element signature="e#3772#3773#0" expanded="true" />
-            <element signature="e#3817#3818#0" expanded="true" />
-            <element signature="e#3853#3854#0" expanded="true" />
-            <element signature="e#3887#3888#0" expanded="true" />
-            <element signature="e#3917#3918#0" expanded="true" />
-            <element signature="e#3963#3964#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-            <element signature="e#4067#4068#0" expanded="true" />
-            <element signature="e#4099#4100#0" expanded="true" />
-            <element signature="e#4147#4148#0" expanded="true" />
-            <element signature="e#4189#4190#0" expanded="true" />
-            <element signature="e#4223#4224#0" expanded="true" />
-            <element signature="e#4255#4256#0" expanded="true" />
-            <element signature="e#4303#4304#0" expanded="true" />
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4415#4416#0" expanded="true" />
-            <element signature="e#4467#4468#0" expanded="true" />
-            <element signature="e#4513#4514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/LogErrorMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1633">
-          <caret line="10" column="81" lean-forward="true" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/RoleMenuMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/LogLoginMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/DeptMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/UserRoleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -985,13 +630,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/DeptMapper.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/MenuMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1024,10 +662,334 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/dao/MenuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/mapper/MenuMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="684">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/ResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/ShiroUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/constant/UserConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/bind/CurrentUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/bind/CurrentUserMethodArgumentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/credentials/RetryLimitHashedCredentialsMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/realm/UserRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/ShiroApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/BasicApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/webmvc/MyWebMvcConfigureAdapt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/ViewControllerRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/static/css/public.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/static/css/signin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/i18n/login.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/LocaleResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/webmvc/MyLocalResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/i18n/login_en_US.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/i18n/login_zh_CN.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-246" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.8.RELEASE/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/config/webmvc/MyWebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="41" column="90" selection-start-line="41" selection-start-column="90" selection-end-line="41" selection-end-column="90" />
+          <folding>
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1190#1191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-basic/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="20" column="102" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
