@@ -3,6 +3,7 @@ package com.xlx.shiro.controller;
 import com.xlx.shiro.common.util.ShiroUtil;
 import com.xlx.shiro.dto.LoginDTO;
 import com.xlx.shiro.dto.ResultDTO;
+import com.xlx.shiro.entity.User;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
@@ -30,9 +31,10 @@ public class LoginController {
 	public ResultDTO login(LoginDTO loginDTO) {
 		UsernamePasswordToken upToken = new UsernamePasswordToken(loginDTO.getUsername(), loginDTO.getPassword(), loginDTO.getRememberMe());
 		Subject subject = ShiroUtil.getSubject();
+		User user = (User) subject.getPrincipal();
 		try {
 			subject.login(upToken);
-			return ResultDTO.success(subject.getPrincipal());
+			return ResultDTO.success(user);
 		} catch (AuthenticationException e) {
 			logger.error("登陆失败:[{}]", e.getMessage());
 			return ResultDTO.failed(e.getMessage(),loginDTO);

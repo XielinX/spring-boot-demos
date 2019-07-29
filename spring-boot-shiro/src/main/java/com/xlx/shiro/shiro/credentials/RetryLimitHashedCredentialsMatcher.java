@@ -41,7 +41,7 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
 		if (retryCount.incrementAndGet() > 5){
 			//连续尝试登录失败超过5次
 			log.error("*********帐号:[{}]被锁定******",username);
-			throw new ExcessiveAttemptsException("帐号被锁,请10分钟后重试");
+			throw new ExcessiveAttemptsException("连续登录错误5次,请10分钟后重试");
 		}
 
 		boolean matches = super.doCredentialsMatch(token,info);

@@ -17,8 +17,8 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from sys_roles
-    where role_id = #{role_id,jdbcType=BIGINT}
+    from sys_role
+    where role_id = #{roleId,jdbcType=BIGINT}
   </select>
 
   <!--根据帐号获取该用户的角色集,[admin,ceo,manager]-->
@@ -42,89 +42,90 @@
   </select>
 
 
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from sys_roles
-    where role_id = #{role_id,jdbcType=BIGINT}
+    delete from sys_role
+    where role_id = #{roleId,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.xlx.shiro.entity.Role">
-    insert into sys_roles (role_id, role_key, role_name, 
+    insert into sys_role (role_id, role_key, role_name, 
       available, gmt_create, gmt_modified
       )
-    values (#{role_id,jdbcType=BIGINT}, #{role_key,jdbcType=VARCHAR}, #{role_name,jdbcType=VARCHAR}, 
-      #{available,jdbcType=BIT}, #{gmt_create,jdbcType=TIMESTAMP}, #{gmt_modified,jdbcType=TIMESTAMP}
+    values (#{roleId,jdbcType=BIGINT}, #{roleKey,jdbcType=VARCHAR}, #{roleName,jdbcType=VARCHAR}, 
+      #{available,jdbcType=BIT}, #{gmtCreate,jdbcType=TIMESTAMP}, #{gmtModified,jdbcType=TIMESTAMP}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.xlx.shiro.entity.Role">
-    insert into sys_roles
+    insert into sys_role
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="role_id != null">
+      <if test="roleId != null">
         role_id,
       </if>
-      <if test="role_key != null">
+      <if test="roleKey != null">
         role_key,
       </if>
-      <if test="role_name != null">
+      <if test="roleName != null">
         role_name,
       </if>
       <if test="available != null">
         available,
       </if>
-      <if test="gmt_create != null">
+      <if test="gmtCreate != null">
         gmt_create,
       </if>
-      <if test="gmt_modified != null">
+      <if test="gmtModified != null">
         gmt_modified,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="role_id != null">
-        #{role_id,jdbcType=BIGINT},
+      <if test="roleId != null">
+        #{roleId,jdbcType=BIGINT},
       </if>
-      <if test="role_key != null">
-        #{role_key,jdbcType=VARCHAR},
+      <if test="roleKey != null">
+        #{roleKey,jdbcType=VARCHAR},
       </if>
-      <if test="role_name != null">
-        #{role_name,jdbcType=VARCHAR},
+      <if test="roleName != null">
+        #{roleName,jdbcType=VARCHAR},
       </if>
       <if test="available != null">
         #{available,jdbcType=BIT},
       </if>
-      <if test="gmt_create != null">
-        #{gmt_create,jdbcType=TIMESTAMP},
+      <if test="gmtCreate != null">
+        #{gmtCreate,jdbcType=TIMESTAMP},
       </if>
-      <if test="gmt_modified != null">
-        #{gmt_modified,jdbcType=TIMESTAMP},
+      <if test="gmtModified != null">
+        #{gmtModified,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.xlx.shiro.entity.Role">
-    update sys_roles
+    update sys_role
     <set>
-      <if test="role_key != null">
-        role_key = #{role_key,jdbcType=VARCHAR},
+      <if test="roleKey != null">
+        role_key = #{roleKey,jdbcType=VARCHAR},
       </if>
-      <if test="role_name != null">
-        role_name = #{role_name,jdbcType=VARCHAR},
+      <if test="roleName != null">
+        role_name = #{roleName,jdbcType=VARCHAR},
       </if>
       <if test="available != null">
         available = #{available,jdbcType=BIT},
       </if>
-      <if test="gmt_create != null">
-        gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      <if test="gmtCreate != null">
+        gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
       </if>
-      <if test="gmt_modified != null">
-        gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP},
+      <if test="gmtModified != null">
+        gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
       </if>
     </set>
-    where role_id = #{role_id,jdbcType=BIGINT}
+    where role_id = #{roleId,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xlx.shiro.entity.Role">
-    update sys_roles
-    set role_key = #{role_key,jdbcType=VARCHAR},
-      role_name = #{role_name,jdbcType=VARCHAR},
+    update sys_role
+    set role_key = #{roleKey,jdbcType=VARCHAR},
+      role_name = #{roleName,jdbcType=VARCHAR},
       available = #{available,jdbcType=BIT},
-      gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
-      gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP}
-    where role_id = #{role_id,jdbcType=BIGINT}
+      gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+      gmt_modified = #{gmtModified,jdbcType=TIMESTAMP}
+    where role_id = #{roleId,jdbcType=BIGINT}
   </update>
 </mapper>

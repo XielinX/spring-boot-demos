@@ -1,8 +1,9 @@
 package com.xlx.shiro.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class LogLogin {
+public class LogLogin implements Serializable {
     private Long id;
 
     private String account;

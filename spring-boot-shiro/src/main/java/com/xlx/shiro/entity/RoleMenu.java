@@ -1,19 +1,21 @@
 package com.xlx.shiro.entity;
 
-public class RoleResource {
+import java.io.Serializable;
+
+public class RoleMenu implements Serializable {
     private Long id;
 
     private Long roleId;
 
     private Long resourceId;
 
-    public RoleResource(Long id, Long roleId, Long resourceId) {
+    public RoleMenu(Long id, Long roleId, Long resourceId) {
         this.id = id;
         this.roleId = roleId;
         this.resourceId = resourceId;
     }
 
-    public RoleResource() {
+    public RoleMenu() {
         super();
     }
 

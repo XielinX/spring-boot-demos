@@ -335,6 +335,7 @@ public class ShiroConfig {
 		filterChainDefinitions.put("/ajax/**", "anon");
 		filterChainDefinitions.put("/js/**", "anon");
 		filterChainDefinitions.put("/ruoyi/**", "anon");
+
 		filterChainDefinitions.put("/login", "authc");
 		filterChainDefinitions.put("/logout", "logout");
 		filterChainDefinitions.put("/authenticated", "authc");

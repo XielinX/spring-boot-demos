@@ -1,5 +1,6 @@
 package com.xlx.shiro.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
@@ -9,7 +10,6 @@ import java.util.Date;
 
 @Data
 public class User implements Serializable {
-
     private Long userId; //主键
 
     private Long deptId; // 部门id
@@ -30,13 +30,14 @@ public class User implements Serializable {
 
     private Integer gender; //性别,1:男;0女
 
+    @JSONField(format = "yyyy-MM-dd")
     private Date birth; //出生日期
 
     private String mail; //邮箱
 
     private String phone; //电话
 
-    private Boolean locked = Boolean.FALSE; //不锁定
+    private Boolean locked; //不锁定
 
     private String loginIp; // 登录ip
 
@@ -59,6 +60,9 @@ public class User implements Serializable {
     public String getCredentialsSalt(){
         return userName + salt;
     }
+
+
+
 
 
     public User(Long userId, Long deptId, String avatarName, String avatarUrl, String userName, String userReal, String userPassword, String salt, String token, Integer gender, Date birth, String mail, String phone, Boolean locked, String loginIp, Date loginDate, Date gmtCreate, Date gmtModified) {

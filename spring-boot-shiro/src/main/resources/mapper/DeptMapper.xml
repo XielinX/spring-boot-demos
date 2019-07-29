@@ -18,15 +18,15 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from sys_depts
+    from sys_dept
     where dept_id = #{deptId,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from sys_depts
+    delete from sys_dept
     where dept_id = #{deptId,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.xlx.shiro.entity.Dept">
-    insert into sys_depts (dept_id, dept_name, parent_id, 
+    insert into sys_dept (dept_id, dept_name, parent_id, 
       parent_ids, available, gmt_create, 
       gmt_modified)
     values (#{deptId,jdbcType=BIGINT}, #{deptName,jdbcType=VARCHAR}, #{parentId,jdbcType=BIGINT}, 
@@ -34,7 +34,7 @@
       #{gmtModified,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.xlx.shiro.entity.Dept">
-    insert into sys_depts
+    insert into sys_dept
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="deptId != null">
         dept_id,
@@ -83,7 +83,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.xlx.shiro.entity.Dept">
-    update sys_depts
+    update sys_dept
     <set>
       <if test="deptName != null">
         dept_name = #{deptName,jdbcType=VARCHAR},
@@ -107,7 +107,7 @@
     where dept_id = #{deptId,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xlx.shiro.entity.Dept">
-    update sys_depts
+    update sys_dept
     set dept_name = #{deptName,jdbcType=VARCHAR},
       parent_id = #{parentId,jdbcType=BIGINT},
       parent_ids = #{parentIds,jdbcType=VARCHAR},

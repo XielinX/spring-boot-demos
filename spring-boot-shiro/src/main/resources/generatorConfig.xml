@@ -56,7 +56,7 @@
         	targetPackage:sqlMap映射文件所在包名
         	targetProject:sqlMap映射文件所在项目路径
         -->  
-        <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">  
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
             <property name="enableSubPackages" value="true"/>  
         </sqlMapGenerator> 
         
@@ -76,7 +76,7 @@
         	domainObjectName:pojo类名
         	enableXxxByExample:是否要生成对应的Example
          -->  
-        <table tableName="sys_users"
+        <table tableName="sys_user"
 	        domainObjectName="User"
 	        enableCountByExample="false" 
 			enableUpdateByExample="false" 
@@ -87,7 +87,7 @@
 			<property name="useActualColumnNames" value="false" />  
 		</table>
 		
-		<table tableName="sys_roles"
+		<table tableName="sys_role"
 			domainObjectName="Role"
 			enableCountByExample="false" 
 			enableUpdateByExample="false" 
@@ -95,10 +95,10 @@
 			enableSelectByExample="false" 
 			selectByExampleQueryId="false">
         	<!-- 设置pojo类属性的命名方式,true:使用数据库字段,false:依照驼峰式大写命名(默认) -->
-			<property name="useActualColumnNames" value="true" />  
+			<property name="useActualColumnNames" value="false" />
 		</table>
-		<table tableName="sys_resources"
-			domainObjectName="Resource"
+		<table tableName="sys_menu"
+			domainObjectName="Menu"
 			enableCountByExample="false" 
 			enableUpdateByExample="false" 
 			enableDeleteByExample="false" 
@@ -108,7 +108,7 @@
 			<property name="useActualColumnNames" value="false" />  
 		</table>
 		
-		<table tableName="sys_depts"
+		<table tableName="sys_dept"
 			domainObjectName="Dept"
 			enableCountByExample="false" 
 			enableUpdateByExample="false" 
@@ -148,8 +148,8 @@
         	<!-- 设置pojo类属性的命名方式,true:使用数据库字段,false:依照驼峰式大写命名(默认) -->
 			<property name="useActualColumnNames" value="false" />
 		</table>
-		<table tableName="sys_role_resource"
-			   domainObjectName="RoleResource"
+		<table tableName="sys_role_menu"
+			   domainObjectName="RoleMenu"
 			   enableCountByExample="false"
 			   enableUpdateByExample="false"
 			   enableDeleteByExample="false"

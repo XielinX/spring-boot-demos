@@ -6,10 +6,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class Resource implements Serializable {
-    private Long resourceId;
+public class Menu implements Serializable {
+    private Long menuId;
 
-    private String name;
+    private String menuName;
 
     private String icon;
 
@@ -29,10 +29,9 @@ public class Resource implements Serializable {
 
     private Date gmtModified;
 
-
-    public Resource(Long resourceId, String name, String icon, String type, String url, Long parentId, String parentIds, String permission, Boolean available, Date gmtCreate, Date gmtModified) {
-        this.resourceId = resourceId;
-        this.name = name;
+    public Menu(Long menuId, String menuName, String icon, String type, String url, Long parentId, String parentIds, String permission, Boolean available, Date gmtCreate, Date gmtModified) {
+        this.menuId = menuId;
+        this.menuName = menuName;
         this.icon = icon;
         this.type = type;
         this.url = url;
