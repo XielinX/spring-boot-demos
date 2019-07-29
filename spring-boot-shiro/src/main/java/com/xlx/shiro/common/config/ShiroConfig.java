@@ -24,7 +24,6 @@ import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.MethodInvokingFactoryBean;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -90,12 +89,6 @@ public class ShiroConfig {
 		UserRealm userRealm = new UserRealm();
 		//使用自定义的CredentialsMatcher
 		userRealm.setCredentialsMatcher(hashedCredentialsMatcher);
-		userRealm.setCachingEnabled(false);
-		//开启权限
-//		userRealm.setAuthorizationCachingEnabled(true);
-//		userRealm.setAuthorizationCacheName("authorizationCache");
-//		userRealm.setAuthenticationCachingEnabled(true);
-//		userRealm.setAuthenticationCacheName("authenticationCache");
 		return userRealm;
 	}
 
@@ -112,16 +105,6 @@ public class ShiroConfig {
 		credentialsMatcher.setHashIterations(2);
 		credentialsMatcher.setStoredCredentialsHexEncoded(true);
 		return credentialsMatcher;
-	}
-
-	/**
-	 * Shiro的生命周期处理器 Lifecycle
-	 *
-	 * @return obj
-	 */
-	@Bean("lifecycleBeanPostProcessor")
-	public LifecycleBeanPostProcessor lifecycleBeanPostProcessor() {
-		return new LifecycleBeanPostProcessor();
 	}
 
 
@@ -360,14 +343,22 @@ public class ShiroConfig {
 		return shiroFilterFactoryBean;
 	}
 
-
-	//	@Bean
-//	@DependsOn({"lifecycleBeanPostProcessor"})
+	/**
+	 * Shiro的生命周期处理器 Lifecycle
+	 *
+	 * @return obj
+	 */
+	@Bean("lifecycleBeanPostProcessor")
+	public LifecycleBeanPostProcessor lifecycleBeanPostProcessor() {
+		return new LifecycleBeanPostProcessor();
+	}
+	/*@Bean
+	@DependsOn({"lifecycleBeanPostProcessor"})
 	public DefaultAdvisorAutoProxyCreator advisorAutoProxyCreator() {
 		DefaultAdvisorAutoProxyCreator advisorAutoProxyCreator = new DefaultAdvisorAutoProxyCreator();
 		advisorAutoProxyCreator.setProxyTargetClass(true);
 		return advisorAutoProxyCreator;
-	}
+	}*/
 
 
 	/**

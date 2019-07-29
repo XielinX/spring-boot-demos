@@ -1,6 +1,7 @@
 package com.xlx.shiro.service;
 
 import com.xlx.shiro.dao.RoleMapper;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Set;
@@ -10,6 +11,7 @@ import java.util.Set;
  *
  * @author xielx on 2019/7/28
  */
+@Service
 public class RoleService {
 
 	@Resource

@@ -25,23 +25,7 @@
            statistics="true">
     </cache>
 
-    <cache name="authorizationCache"
-           maxEntriesLocalHeap="1000"
-           eternal="false"
-           timeToIdleSeconds="1800"
-           timeToLiveSeconds="0"
-           overflowToDisk="false"
-           statistics="true">
-    </cache>
 
-    <cache name="authenticationCache"
-           maxEntriesLocalHeap="1000"
-           eternal="false"
-           timeToIdleSeconds="1800"
-           timeToLiveSeconds="0"
-           overflowToDisk="false"
-           statistics="true">
-    </cache>
     <cache name="shiro-activeSessionCache"
            maxEntriesLocalHeap="1000"
            eternal="false"

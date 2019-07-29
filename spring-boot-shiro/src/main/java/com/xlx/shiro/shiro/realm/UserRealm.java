@@ -80,4 +80,22 @@ public class UserRealm extends AuthorizingRealm {
 
     return simpleAuthenticationInfo;
   }
+
+
+  @Override
+  protected void clearCachedAuthorizationInfo(PrincipalCollection principals) {
+    super.clearCachedAuthorizationInfo(principals);
+  }
+
+  @Override
+  protected void clearCachedAuthenticationInfo(PrincipalCollection principals) {
+    super.clearCachedAuthenticationInfo(principals);
+  }
+
+  @Override
+  protected void clearCache(PrincipalCollection principals) {
+    super.clearCache(principals);
+  }
+
+
 }

@@ -35,7 +35,7 @@
         <!--设置以时间记录-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--修改日志文件名: 文件名+时间,%i:i为变量-->
-            <fileNamePattern>${log.path}/system-info.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>${log.path}/system-info-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <!--日志文件最大保存期限:3天-->
             <maxHistory>15</maxHistory>
             <!--限制日志文件的大小:最大5MB-->
@@ -65,7 +65,7 @@
         <!--设置以时间记录-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--修改日志文件名: 文件名+时间,%i:i为变量-->
-            <fileNamePattern>${log.path}/system-error.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>${log.path}/system-error-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
             <!--日志文件最大保存期限:3天-->
             <maxHistory>15</maxHistory>
             <!--限制日志文件的大小:最大5MB-->
