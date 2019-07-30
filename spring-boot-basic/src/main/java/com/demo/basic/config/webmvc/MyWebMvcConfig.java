@@ -29,6 +29,7 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
 	 */
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
 		registry.addResourceHandler("/static/**");
 	}
 
@@ -38,9 +39,8 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(new LoginInterceptor())
-						.addPathPatterns("/**")
-						.excludePathPatterns("/static/**","/css/**","/bootstrap/**","/img/**","/js/**")
-						.excludePathPatterns("/","/login","/login.html");
+						.excludePathPatterns("/static/**","/","/login","/login.html","/error")
+						.addPathPatterns("/**");
 	}
 
 	/**

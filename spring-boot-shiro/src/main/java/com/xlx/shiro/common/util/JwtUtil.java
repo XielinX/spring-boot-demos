@@ -42,8 +42,8 @@ public class JwtUtil {
   /**
    * 创建JWT/token(有效时间:登录时间+10min)
    * header:
-   * 负载均衡:hashMap
-   * 签名:HS256加密+SECRET密钥
+   * payload负载均衡:
+   * signature签名:HS256加密+SECRET密钥
    * @param userName 登录用户
    * @param generateTime 登录时间也是token生成时间
    * @return.

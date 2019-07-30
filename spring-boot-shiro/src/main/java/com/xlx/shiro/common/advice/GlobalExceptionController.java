@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 public class GlobalExceptionController {
 
 
+  //浏览器/其他客户端访问都是返回json信息
   @ExceptionHandler(Exception.class)
   public ResultDTO errorHandler(HttpServletRequest request,Throwable t){
 

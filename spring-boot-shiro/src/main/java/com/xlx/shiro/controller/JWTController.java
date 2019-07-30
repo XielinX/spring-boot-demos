@@ -3,6 +3,7 @@ package com.xlx.shiro.controller;
 import com.xlx.shiro.common.util.DateUtil;
 import com.xlx.shiro.common.util.JwtUtil;
 import com.xlx.shiro.dto.ResultDTO;
+import com.xlx.shiro.entity.User;
 import com.xlx.shiro.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.annotation.Transactional;

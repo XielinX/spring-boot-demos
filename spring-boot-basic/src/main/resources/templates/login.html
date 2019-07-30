@@ -21,15 +21,15 @@
 			<h1 class="h3 mb-3 font-weight-normal" id="tip" th:text="#{login.tip}">Please sign in</h1>
 			<p th:text="${msg}" style="color: red" th:if="${not #strings.isEmpty(msg)}"></p>
 			<label for="username" class="sr-only" th:text="#{login.user-name}">username</label>
-				<input type="text" id="username" name="username" class="form-control" placeholder="input you name" th:placeholder="#{login.user-name}" autocomplete="off" required autofocus>
+				<input type="text" id="username" name="username" class="form-control" value="admin" placeholder="input you name" th:placeholder="#{login.user-name}" autocomplete="off" required autofocus>
 			<label for="password" class="sr-only">Password</label>
-			<input type="password" id="password" name="password"  class="form-control" placeholder="Password" th:placeholder="#{login.password}" autocomplete="off" required>
+			<input type="password" id="password" name="password"  class="form-control" value="admin" placeholder="Password" th:placeholder="#{login.password}" autocomplete="off" required>
 			<div class="checkbox mb-3">
 				<label>
 					<input type="checkbox" id="remember" name="rememberMe"> [[#{login.remember-me}]]
 				</label>
 			</div>
-			<button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{login.btn}?:_" onclick="login()">Sign in</button>
+			<button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{login.btn}?:_">Sign in</button>
 			<br />
 			<p class="mt-5 mb-3 text-muted">&copy; CopyRight 2017-2019</p>
 			<p class="mt-5 mb-3 text-muted">
@@ -42,7 +42,6 @@
 				function login() {
 
 
-					$("#tip").attr("display","none");
 					/*var username = document.getElementById("username");
 					var password = document.getElementById("password");
 					var rememberMe = document.getElementById("remember");
