@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-email" />
         <module name="spring-boot-basic" />
+        <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-shiro" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="spring-boot-basic" options="-parameters" />
       <module name="spring-boot-email" options="-parameters" />
       <module name="spring-boot-helloworld" options="-parameters" />
+      <module name="spring-boot-rabbitmq" options="-parameters" />
       <module name="spring-boot-shiro" options="-parameters" />
     </option>
   </component>
