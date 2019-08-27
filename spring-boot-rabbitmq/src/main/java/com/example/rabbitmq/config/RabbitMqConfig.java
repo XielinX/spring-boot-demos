@@ -1,19 +1,21 @@
 package com.example.rabbitmq.config;
 
+import org.springframework.amqp.core.Queue;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Queue;
 
 /**
  * RabbitMq配置
  *
  * @author xielx on 2019/8/25
  */
-@Configuration
+//@Configuration
 public class RabbitMqConfig {
 
 
+	//@Bean
 	public Queue queue(){
-		return  null;
+		return  new Queue("hello");
 	}
 }

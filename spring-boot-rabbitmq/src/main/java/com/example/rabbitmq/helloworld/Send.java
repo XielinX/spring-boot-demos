@@ -4,9 +4,6 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
-import java.io.IOException;
-import java.util.concurrent.TimeoutException;
-
 /**
  * 发送
  * Send-->==队列===--->Receive
@@ -26,15 +23,16 @@ public class Send {
 		factory.setHost("localhost");
 		//使用try-with-resources
 		try (Connection connection = factory.newConnection();
-				 // 2.创建一个频道
+				 // 2.创建一个通道
 				 Channel channel = connection.createChannel()) {
 
 			// 3.声明一个队列来发送
 			channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-			String message = "Hello World";
-			//
+			String message = "Hello World!";
+			//4.发布
 			channel.basicPublish("",QUEUE_NAME,null,message.getBytes("UTF-8"));
 			System.out.println("[x] Sent:" + message);
+
 		}
 	}
 }
