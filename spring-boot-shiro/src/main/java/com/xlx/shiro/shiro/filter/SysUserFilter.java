@@ -20,8 +20,6 @@ import javax.servlet.ServletResponse;
 @Slf4j
 public class SysUserFilter extends PathMatchingFilter {
 
-	@Resource
-  private UserService userService;
 	@Override
 	protected boolean onPreHandle(ServletRequest request, ServletResponse response, Object mappedValue) throws Exception {
 		log.info("========PathMatchingFilter/onPreHandle方法================");

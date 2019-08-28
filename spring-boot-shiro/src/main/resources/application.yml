@@ -7,7 +7,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/springbootdb?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/springbootdb?useUnicode=true&characterEncoding=utf8
     username: mango
     password: root5.7.22
 
@@ -17,27 +17,15 @@ spring:
     encoding: utf-8
     cache: false
 
-  #彩色日志
-  output:
-    ansi:
-      enabled: always
-
 
 # MyBatis
 mybatis:
   # 搜索指定包别名
-  typeAliasesPackage: com.xlx.shiro.helloworld
+  typeAliasesPackage: com.xlx.shiro.entity
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
   mapperLocations: classpath:mapper/**/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true
-
-# 日志配置
-logging:
-  level:
-    com.xlx: info
-    org.springframework: warn
-    org.thymeleaf: info
 
 
 

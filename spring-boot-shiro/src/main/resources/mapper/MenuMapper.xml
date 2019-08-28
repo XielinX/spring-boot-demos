@@ -18,7 +18,7 @@
     </resultMap>
     <sql id="Base_Column_List">
         menu_id, menu_name, icon, type, url, parent_id, parent_ids, permission, available,
-    gmt_create, gmt_modified
+    gmt_create, gmt_modified
     </sql>
     <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
         select
@@ -60,7 +60,7 @@
         insert into sys_menu (menu_id, menu_name, icon,
                               type, url, parent_id,
                               parent_ids, permission, available,
-                              gmt_create, gmt_modified)
+                              gmt_create, gmt_modified)
         values (#{menuId,jdbcType=BIGINT}, #{menuName,jdbcType=VARCHAR}, #{icon,jdbcType=VARCHAR},
                 #{type,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, #{parentId,jdbcType=BIGINT},
                 #{parentIds,jdbcType=VARCHAR}, #{permission,jdbcType=VARCHAR}, #{available,jdbcType=BIT},
@@ -100,7 +100,7 @@
                 gmt_create,
             </if>
             <if test="gmtModified != null">
-                gmt_modified,
+                gmt_modified,
             </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -170,7 +170,7 @@
                 gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
             </if>
             <if test="gmtModified != null">
-                gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
+                gmt_modified = #{gmtModified,jdbcType=TIMESTAMP},
             </if>
         </set>
         where menu_id = #{menuId,jdbcType=BIGINT}
@@ -186,7 +186,7 @@
             permission = #{permission,jdbcType=VARCHAR},
             available  = #{available,jdbcType=BIT},
             gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
-            gmt_modified =
+            gmt_modified =
             #{gmtModified,jdbcType=TIMESTAMP}
         where menu_id = #{menuId,jdbcType=BIGINT}
     </update>

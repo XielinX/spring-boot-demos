@@ -29,6 +29,7 @@ public class LoginController {
 	@ResponseBody
 	@PostMapping("/login")
 	public ResultDTO login(LoginDTO loginDTO) {
+		logger.info("===================/login");
 		UsernamePasswordToken upToken = new UsernamePasswordToken(loginDTO.getUsername(), loginDTO.getPassword(), loginDTO.getRememberMe());
 		Subject subject = ShiroUtil.getSubject();
 		User user = (User) subject.getPrincipal();

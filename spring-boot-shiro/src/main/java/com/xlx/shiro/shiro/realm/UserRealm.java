@@ -65,7 +65,7 @@ public class UserRealm extends AuthorizingRealm {
     String username = upToken.getUsername();
     logger.info("userAccount:[{}]",username);
     User user = userService.findUserByUserName(username);
-    logger.info("查询出的用户[{}]=", user);
+    logger.info("查询出的用户[{}]", user);
     if (user == null) {
       throw new UnauthenticatedException("帐号或密码错误");
     }

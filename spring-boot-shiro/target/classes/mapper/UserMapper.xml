@@ -39,7 +39,7 @@
   <select id="selectUserByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
-    from sys_users
+    from sys_user
     where user_name = #{userName,jdbcType=VARCHAR}
   </select>
 
@@ -47,7 +47,7 @@
   <select id="selectUserByPage" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
-    from sys_users
+    from sys_user
     order by
     gmt_create desc
     limit #{offset},#{size};

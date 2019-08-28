@@ -326,17 +326,8 @@ public class ShiroConfig {
 
 		//设置过滤链
 		Map<String, String> filterChainDefinitions = new LinkedHashMap<>();
-		filterChainDefinitions.put("/favicon.ico**", "anon");
-		filterChainDefinitions.put("/ruoyi.png**", "anon");
-		filterChainDefinitions.put("/css/**", "anon");
-		filterChainDefinitions.put("/docs/**", "anon");
-		filterChainDefinitions.put("/fonts/**", "anon");
-		filterChainDefinitions.put("/img/**", "anon");
-		filterChainDefinitions.put("/ajax/**", "anon");
-		filterChainDefinitions.put("/js/**", "anon");
-		filterChainDefinitions.put("/ruoyi/**", "anon");
-
-		filterChainDefinitions.put("/login", "authc");
+		filterChainDefinitions.put("/static/**", "anon");
+		filterChainDefinitions.put("/login", "anon");
 		filterChainDefinitions.put("/logout", "logout");
 		filterChainDefinitions.put("/authenticated", "authc");
 		filterChainDefinitions.put("/**", "user,sysUser");
