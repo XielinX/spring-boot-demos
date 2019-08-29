@@ -30,6 +30,9 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectResources">
+    <resource url="http://www.pollix.at/thymeleaf/shiro" location="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="jdk8u22" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

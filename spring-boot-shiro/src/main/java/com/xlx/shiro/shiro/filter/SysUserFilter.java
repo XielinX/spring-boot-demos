@@ -25,7 +25,7 @@ public class SysUserFilter extends PathMatchingFilter {
 		log.info("========PathMatchingFilter/onPreHandle方法================");
 		//String username = (String) ShiroUtil.getSubject().getPrincipal();
 		User user = (User) ShiroUtil.getSubject().getPrincipal();
-		request.setAttribute(UserConstant.USER_SESSION,user);//userService.findUserByUserName(username)
+		request.setAttribute(UserConstant.CURRENT_USER,user);//userService.findUserByUserName(username)
 		return true;
 	}
 

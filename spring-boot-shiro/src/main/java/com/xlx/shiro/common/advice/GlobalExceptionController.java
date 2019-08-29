@@ -2,9 +2,13 @@ package com.xlx.shiro.common.advice;
 
 import com.xlx.shiro.dto.ResultDTO;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.authz.UnauthorizedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.context.request.NativeWebRequest;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -16,6 +20,18 @@ import javax.servlet.http.HttpServletRequest;
 @Slf4j
 @RestControllerAdvice
 public class GlobalExceptionController {
+
+
+
+  @ExceptionHandler({UnauthorizedException.class})
+  @ResponseStatus(HttpStatus.UNAUTHORIZED)
+  public ModelAndView processUnauthenticatedException(UnauthorizedException e) {
+    System.out.println("----进入捕获[权限未认证]的异常类里----------");
+    ModelAndView mv = new ModelAndView();
+    mv.addObject("exception", e);
+    mv.setViewName("unauthorized");
+    return mv;
+  }
 
 
   //浏览器/其他客户端访问都是返回json信息

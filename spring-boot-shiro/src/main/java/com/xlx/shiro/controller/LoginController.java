@@ -5,7 +5,10 @@ import com.xlx.shiro.dto.LoginDTO;
 import com.xlx.shiro.dto.ResultDTO;
 import com.xlx.shiro.entity.User;
 import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.ExcessiveAttemptsException;
+import org.apache.shiro.authc.LockedAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.UnauthenticatedException;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,12 +38,28 @@ public class LoginController {
 		User user = (User) subject.getPrincipal();
 		try {
 			subject.login(upToken);
-			return ResultDTO.success(user);
-		} catch (AuthenticationException e) {
+			logger.info( "User [" + user.getUserName() + "] logged in successfully." );
+			return ResultDTO.success("登录成功",user);
+		}catch (UnauthenticatedException | LockedAccountException | ExcessiveAttemptsException ex){
+			logger.error("登陆失败:[{}]", ex.getMessage());
+			return ResultDTO.failed(ex.getMessage());
+		}catch (AuthenticationException e) {
 			logger.error("登陆失败:[{}]", e.getMessage());
-			return ResultDTO.failed(e.getMessage(),loginDTO);
+			return ResultDTO.failed("用户名或密码错误",loginDTO);
 		}
 	}
+
+
+	/**
+	 * 登出
+	 */
+	@GetMapping("/logout")
+	public String logout(){
+		ShiroUtil.getSubject().logout();
+		return "redirect:/login";
+	}
+
+
 
 
 	/**
@@ -48,6 +67,7 @@ public class LoginController {
 	 */
 	@GetMapping("/unauthorized")
 	public String unAuthorized() {
+
 		return "unauthorized";
 	}
 }

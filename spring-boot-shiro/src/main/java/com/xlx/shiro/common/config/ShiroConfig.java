@@ -29,12 +29,21 @@ import org.springframework.beans.factory.config.MethodInvokingFactoryBean;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.context.ContextLoader;
+import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.filter.DelegatingFilterProxy;
+import org.thymeleaf.dialect.IDialect;
+import org.thymeleaf.spring5.SpringTemplateEngine;
+import org.thymeleaf.templatemode.TemplateMode;
+import org.thymeleaf.templateresolver.ITemplateResolver;
+import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.Filter;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * shiro注解配置
@@ -68,6 +77,7 @@ public class ShiroConfig {
 	}
 
 
+
 	/**
 	 * 缓存管理器 CacheManager
 	 */
@@ -78,18 +88,6 @@ public class ShiroConfig {
 		ehCacheManager.setCacheManagerConfigFile("classpath:ehcache.xml");
 
 		return ehCacheManager;
-	}
-
-	/**
-	 * 自定义Realm
-	 */
-	@Bean(name = "userRealm")
-	public UserRealm userRealm(@Qualifier("credentialsMatcher") HashedCredentialsMatcher hashedCredentialsMatcher) {
-		logger.info("****userRealm");
-		UserRealm userRealm = new UserRealm();
-		//使用自定义的CredentialsMatcher
-		userRealm.setCredentialsMatcher(hashedCredentialsMatcher);
-		return userRealm;
 	}
 
 	/**
@@ -106,6 +104,20 @@ public class ShiroConfig {
 		credentialsMatcher.setStoredCredentialsHexEncoded(true);
 		return credentialsMatcher;
 	}
+
+
+	/**
+	 * 自定义Realm
+	 */
+	@Bean(name = "userRealm")
+	public UserRealm userRealm(@Qualifier("credentialsMatcher") HashedCredentialsMatcher hashedCredentialsMatcher) {
+		logger.info("****userRealm");
+		UserRealm userRealm = new UserRealm();
+		//使用自定义的CredentialsMatcher
+		userRealm.setCredentialsMatcher(hashedCredentialsMatcher);
+		return userRealm;
+	}
+
 
 
 	/**
@@ -175,13 +187,13 @@ public class ShiroConfig {
 	 * @return obj
 	 */
 	@Bean(name = "rememberMeManager")
-	public CookieRememberMeManager rememberMeManager(Cookie rememberMeCookie) {
+	public CookieRememberMeManager rememberMeManager() {
 		logger.info("****rememberMeManager");
 		CookieRememberMeManager cookieRememberMeManager = new CookieRememberMeManager();
 		//cookie加密的密钥
 		cookieRememberMeManager.setCipherKey(Base64.decode("c3ByaW5nYm9vcnNoaXJv"));
 		//RememberMeCookie
-		cookieRememberMeManager.setCookie(rememberMeCookie);
+		cookieRememberMeManager.setCookie(rememberMeCookie());
 		return cookieRememberMeManager;
 	}
 
@@ -289,50 +301,79 @@ public class ShiroConfig {
 
 
 	/**
-	 * thymeleaf使用shiro标签
-	 *
-	 * @return obj
-	 */
-	@Bean
-	public ShiroDialect dialectForThymeleaf() {
-		logger.info("****dialectForThymeleaf");
-		return new ShiroDialect();
-	}
-
-	/**
-	 * Shiro的Web过滤器 ShiroFilterFactoryBean
+	 * Shiro的Web过滤器 ShiroFilter
 	 *
 	 * @param securityManager 安全管理器
-	 * @return .
 	 */
 	@Bean(name = "shiroFilter")
 	public ShiroFilterFactoryBean shiroFilterFactory(@Qualifier("securityManager") SecurityManager securityManager) {
 		logger.info("***shiroFilterFactory");
-		ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
+		ShiroFilterFactoryBean shiroFilter = new ShiroFilterFactoryBean();
 		//SecurityManager
-		shiroFilterFactoryBean.setSecurityManager(securityManager);
+		shiroFilter.setSecurityManager(securityManager);
 		//登录url
-		shiroFilterFactoryBean.setLoginUrl("/login");
+		shiroFilter.setLoginUrl("/login");
 		//登录成功后跳转url
+		shiroFilter.setSuccessUrl("/index");
 		//未授权跳转url
-		shiroFilterFactoryBean.setUnauthorizedUrl("/unauthorized");
+		shiroFilter.setUnauthorizedUrl("/unauthorized");
 
 
 		//设置过滤器
 		Map<String, Filter> filters = new LinkedHashMap<>();
 		filters.put("authc", formAuthenticationFilter());
 		filters.put("sysUser", sysUserFilter());
-		shiroFilterFactoryBean.setFilters(filters);
+		shiroFilter.setFilters(filters);
 
 		//设置过滤链
 		Map<String, String> filterChainDefinitions = new LinkedHashMap<>();
 		filterChainDefinitions.put("/static/**", "anon");
-		filterChainDefinitions.put("/login", "anon");
+		filterChainDefinitions.put("/login", "authc");
 		filterChainDefinitions.put("/logout", "logout");
 		filterChainDefinitions.put("/authenticated", "authc");
 		filterChainDefinitions.put("/**", "user,sysUser");
-		shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitions);
-		return shiroFilterFactoryBean;
+		shiroFilter.setFilterChainDefinitionMap(filterChainDefinitions);
+		return shiroFilter;
+	}
+
+	/**
+	 * thymeleaf使用shiro标签
+	 *
+	 * @return obj
+	 */
+	@Bean
+	public ShiroDialect shiroDialect() {
+		logger.info("****dialectForThymeleaf");
+		return new ShiroDialect();
+	}
+
+	/**
+	 * 模板解析器
+	 */
+	public ITemplateResolver iTemplateResolver(){
+		logger.info("******ITemplateResolver");
+		WebApplicationContext webApplicationContext = ContextLoader.getCurrentWebApplicationContext();
+		ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver(webApplicationContext.getServletContext());
+		//yml默认路径
+		templateResolver.setPrefix("classpath:/templates");
+		templateResolver.setSuffix(".html");
+		templateResolver.setTemplateMode(TemplateMode.HTML);
+		return templateResolver;
+	}
+
+	/**
+	 * 模板引擎
+	 * @return
+	 */
+	public SpringTemplateEngine getTemplateEngine(){
+		logger.info("******SpringTemplateEngine");
+		SpringTemplateEngine templateEngine = new SpringTemplateEngine();
+		templateEngine.setTemplateResolver(iTemplateResolver());
+		templateEngine.setEnableSpringELCompiler(true);
+		Set<IDialect> dialects = new LinkedHashSet<>();
+		dialects.add(shiroDialect());
+		templateEngine.setAdditionalDialects(dialects);
+		return templateEngine;
 	}
 
 	/**
@@ -355,8 +396,6 @@ public class ShiroConfig {
 
 	/**
 	 * 开启shiro的权限注解
-	 *
-	 * @return obj
 	 */
 	@Bean
 	public AuthorizationAttributeSourceAdvisor shiroAnnotation(SecurityManager securityManager) {

@@ -16,8 +16,6 @@ spring:
     model: HTML
     encoding: utf-8
     cache: false
-
-
 # MyBatis
 mybatis:
   # 搜索指定包别名
