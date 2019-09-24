@@ -25,4 +25,9 @@ public class UserTest {
     System.out.println("SecretKey:" + secretKey);
 
   }
+
+  @Test
+  public void testMath(){
+    System.out.println(Math.round(2.4));//2
+  }
 }

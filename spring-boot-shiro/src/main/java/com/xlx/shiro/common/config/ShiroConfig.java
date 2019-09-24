@@ -121,8 +121,8 @@ public class ShiroConfig {
 
 
 	/**
-	 * 会话DAO SessionDAO
-	 *
+	 * 会话dao SessionDAO
+	 *  Session的CRUD操作
 	 * @return obj
 	 */
 	@Bean(name = "sessionDAO")

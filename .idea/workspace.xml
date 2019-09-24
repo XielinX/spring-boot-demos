@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="705dc8ec-39ea-4f8a-8b52-25b075120f09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/unauthorized.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/spring-boot-shiro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/spring-boot-shiro.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/advice/GlobalExceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/advice/GlobalExceptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,23 +39,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1752">
-              <caret line="336" column="3" selection-start-line="336" selection-start-column="3" selection-end-line="336" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="198">
-                <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+              <folding>
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/interceptor/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/JWTController.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/util/JwtUtil.java" />
         <option value="$PROJECT_DIR$/spring-boot-basic/src/main/java/com/demo/basic/dto/ResultDTO.java" />
@@ -167,12 +149,13 @@
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/advice/GlobalExceptionController.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/unauthorized.html" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/README.md" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java" />
       </list>
     </option>
   </component>
@@ -298,17 +281,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shiro" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="advice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -326,70 +298,34 @@
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
               <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
               <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="realm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-boot-demos" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -450,7 +386,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ShiroApplication">
+  <component name="RunManager" selected="JUnit.UserTest.testMath">
     <configuration name="NewTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.workqueues.NewTask" />
       <module name="spring-boot-rabbitmq" />
@@ -477,8 +413,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.helloworld.Recv" />
+    <configuration name="Send" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.helloworld.Send" />
       <module name="spring-boot-rabbitmq" />
       <extension name="coverage">
         <pattern>
@@ -490,15 +426,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Send" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.rabbitmq.helloworld.Send" />
-      <module name="spring-boot-rabbitmq" />
+    <configuration name="UserTest.testMath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-shiro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.rabbitmq.helloworld.*" />
+          <option name="PATTERN" value="com.xlx.shiro.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.xlx.shiro.user" />
+      <option name="MAIN_CLASS_NAME" value="com.xlx.shiro.user.UserTest" />
+      <option name="METHOD_NAME" value="testMath" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -532,20 +471,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.Send" />
-      <item itemvalue="Application.Recv" />
       <item itemvalue="Application.NewTask" />
       <item itemvalue="Application.Recv (1)" />
       <item itemvalue="Spring Boot.SpringBootEmailApplication" />
       <item itemvalue="Spring Boot.SpringBootRabbitmqApplication" />
       <item itemvalue="Spring Boot.ShiroApplication" />
+      <item itemvalue="JUnit.UserTest.testMath" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.testMath" />
         <item itemvalue="Spring Boot.ShiroApplication" />
         <item itemvalue="Application.Send" />
         <item itemvalue="Application.NewTask" />
         <item itemvalue="Application.Recv (1)" />
-        <item itemvalue="Application.Recv" />
       </list>
     </recent_temporary>
   </component>
@@ -594,17 +533,11 @@
       <workItem from="1567007903866" duration="762000" />
       <workItem from="1567009508815" duration="20000" />
       <workItem from="1567009555997" duration="2152000" />
-      <workItem from="1567042984406" duration="16058000" />
+      <workItem from="1567042984406" duration="17857000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BasicApplicationTests_testAoc - 2019.07.25 at 11h 26m 33s.xml">
-      <configuration name="BasicApplicationTests.testAoc" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BasicApplicationTests_testAoc - 2019.07.25 at 11h 30m 45s.xml">
-      <configuration name="BasicApplicationTests.testAoc" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BasicApplicationTests_testAoc - 2019.07.25 at 11h 33m 06s.xml">
       <configuration name="BasicApplicationTests.testAoc" configurationId="JUnit" />
     </history-entry>
@@ -629,9 +562,15 @@
     <history-entry file="demo_testBase64 - 2019.08.03 at 23h 56m 11s.xml">
       <configuration name="demo.testBase64" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserTest_testMath - 2019.08.29 at 16h 39m 03s.xml">
+      <configuration name="UserTest.testMath" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testMath - 2019.08.29 at 16h 40m 29s.xml">
+      <configuration name="UserTest.testMath" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297808000" />
+    <option name="totallyTimeSpent" value="299607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -644,7 +583,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49619484" visible="true" weight="0.32412398" />
       <window_info id="Structure" order="1" show_stripe_button="false" sideWeight="0.50380516" side_tool="true" weight="0.2958221" />
@@ -722,17 +660,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://F:/tools/eclipse/jdk1.8/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-          <folding>
-            <element signature="e#5748#5749#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.1/shiro-core-1.4.1-sources.jar!/org/apache/shiro/authc/credential/SimpleCredentialsMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -1000,13 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1088,17 +1008,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        <state relative-caret-position="162">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java">
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/shiro/filter/SysUserFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1752">
-          <caret line="336" column="3" selection-start-line="336" selection-start-column="3" selection-end-line="336" selection-end-column="3" />
+        <state relative-caret-position="254">
+          <caret line="26" column="61" lean-forward="true" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1106,9 +1026,27 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="198">
-            <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/xlx/shiro/common/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="124" column="20" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/test/java/com/xlx/shiro/user/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding>
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
