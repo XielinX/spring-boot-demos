@@ -37,12 +37,12 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
 	/**
 	 * 拦截器
 	 */
-	@Override
+	/*@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(new LoginInterceptor())
 						.excludePathPatterns("/","/login","/login.html")
                 .addPathPatterns("/**");
-    }
+    }*/
 
 	/**
 	 * MyLocalResolver国际化的自动注入
