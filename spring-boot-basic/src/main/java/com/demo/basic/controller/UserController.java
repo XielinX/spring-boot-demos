@@ -21,4 +21,10 @@ public class UserController {
 	 }
 		return "user/list";
 	}
+	
+	
+	@GetMapping("/user/test")
+	public String test(){
+		return "test";
+	}
 }

@@ -20,11 +20,11 @@ public class MyException extends RuntimeException {
 	}
 
 	public MyException(Integer code){
-		code = this.code;
+		this.code = code;
 	}
 
 	public MyException(String message){
-		this.message = message;
+		super(message);
 	}
 
 	public MyException(Integer code,String message){

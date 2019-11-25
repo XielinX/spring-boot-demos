@@ -21,6 +21,7 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/").setViewName("login");
+		registry.addViewController("/index").setViewName("index");
 	}
 
 
@@ -29,8 +30,8 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
 	 */
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
-		registry.addResourceHandler("/static/**");
+//		registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+//		registry.addResourceHandler("/static/**");
 	}
 
 	/**
@@ -39,12 +40,12 @@ public class MyWebMvcConfig implements WebMvcConfigurer {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(new LoginInterceptor())
-						.excludePathPatterns("/static/**","/","/login","/login.html","/error")
-						.addPathPatterns("/**");
-	}
+						.excludePathPatterns("/","/login","/login.html")
+                .addPathPatterns("/**");
+    }
 
 	/**
-	 * MyLocalResolver的自动注入
+	 * MyLocalResolver国际化的自动注入
 	 */
 	@Bean
 	public LocaleResolver localeResolver(){

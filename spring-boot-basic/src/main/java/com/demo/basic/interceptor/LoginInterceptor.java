@@ -1,5 +1,6 @@
 package com.demo.basic.interceptor;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author xielx on 2019/7/29
  */
+@Slf4j
 public class LoginInterceptor implements HandlerInterceptor {
 
 	/**
@@ -18,10 +20,10 @@ public class LoginInterceptor implements HandlerInterceptor {
 	 */
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-		Object obj = request.getSession().getAttribute("user");
+		Object obj = request.getSession().getAttribute("username");
 		if (obj == null){
 
-			request.setAttribute("msg","请先登录");
+			request.setAttribute("msg","未登录,请先登录");
 			request.getRequestDispatcher("/login").forward(request,response);
 
 			//response.sendRedirect("/login");
