@@ -3,6 +3,7 @@ package com.demo.basic.controller;
 import com.demo.basic.dto.ResultDTO;
 import com.demo.basic.exception.MyException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -36,6 +37,17 @@ public class MyExceptionHandler {
         return "forward:/error";
     }
     
+    /**
+     * 方法参数校验异常
+     * @param e MethodArgumentNotValidException
+     * @return 统一返回结果
+     */
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseBody
+    public ResultDTO handleMethodException(Exception e) {
+        return ResultDTO.failed(1009, e.getMessage());
+    }
+    
     
     /**
      * 未捕获异常
@@ -45,6 +57,7 @@ public class MyExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public ResultDTO handleException(Exception e){
-        return ResultDTO.failed(1009,e.getMessage());
+        
+        return ResultDTO.failed(1010,e.getMessage());
     }
 }
