@@ -6,9 +6,10 @@ package com.demo.basic.enums;
  * @author xielx at 2019/11/25 20:45
  */
 public enum ErrorCodeEnum {
-    
+    PARAM_ERROR(1000,"参数不正确"),
     SESSION_IN_VALIDATE(1001,"无效会话"),
-    UNKNOWN_ACCOUNT(1002,"未知账户");
+    UNKNOWN_ACCOUNT(1002,"未知账户"),
+    UNKNOWN_ERROR(1010,"系统异常");
     
     private Integer code;
     private String msg;

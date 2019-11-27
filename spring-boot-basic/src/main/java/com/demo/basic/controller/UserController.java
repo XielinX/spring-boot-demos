@@ -1,6 +1,6 @@
 package com.demo.basic.controller;
 
-import com.demo.basic.exception.MyException;
+import com.demo.basic.exception.UserNotExistException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +21,7 @@ public class UserController {
     @ResponseBody
     public String list(@RequestParam(name = "name") String query) {
         if ("zh".equals(query)) {
-            throw new MyException("用户异常错误");
+            throw new UserNotExistException("用户异常错误");
         }
         return "user/list";
     }

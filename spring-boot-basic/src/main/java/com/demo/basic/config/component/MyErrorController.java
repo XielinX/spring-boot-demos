@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @author xielx at 2019/11/25 19:45
  */
-@Component
+//@Component
 public class MyErrorController extends DefaultErrorAttributes {
     
     @Override

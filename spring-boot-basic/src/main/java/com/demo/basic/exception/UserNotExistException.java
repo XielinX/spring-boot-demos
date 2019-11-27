@@ -5,10 +5,10 @@ package com.demo.basic.exception;
  *
  * @author xielx on 2019/7/30
  */
-public class MyException extends RuntimeException {
+public class UserNotExistException extends RuntimeException {
 
 
-	public MyException(String message){
+	public UserNotExistException(String message){
 		super(message);
 	}
 	

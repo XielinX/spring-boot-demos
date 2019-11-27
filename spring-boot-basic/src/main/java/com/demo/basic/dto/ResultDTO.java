@@ -1,5 +1,7 @@
 package com.demo.basic.dto;
 
+import com.demo.basic.enums.ErrorCodeEnum;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
@@ -11,100 +13,112 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  */
 
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResultDTO {
-
-  private static final String SUCCESS = "OK";
-  private static final String FAILURE = "ERROR";
-
-  // 状态码
-  private Integer code;
-
-  // 提示信息
-  private String message;
-
-  //携带参数
-  private Object data;
-
-
-  public ResultDTO(Integer code, String message, Object data) {
-    this.code = code;
-    this.message = message;
-    this.data = data;
-  }
-
-
-  @Override
-  public String toString() {
-    return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
-  }
-
-  /**
-   * 默认成功
-   */
-  public static ResultDTO success(){
-    return new ResultDTO(200,ResultDTO.SUCCESS,null);
-  }
-
-  /**
-   * 自定义提示信息
-   */
-  public static ResultDTO success(String message){
-    return new ResultDTO(200,message,null);
-  }
-
-  /**
-   * 携带参数
-   */
-  public static ResultDTO success(Object object){
-    return new ResultDTO(200,ResultDTO.SUCCESS,object);
-  }
-
-  /**
-   * 自定义信息+携带参数
-   */
-  public static ResultDTO success(String message,Object object){
-    return new ResultDTO(200,message,object);
-  }
-
-  /**
-   * ************************
-   * 默认失败
-   * ************************
-   */
-  public static ResultDTO failed(){
-    return new ResultDTO(400,ResultDTO.FAILURE,null);
-  }
-
-
-  /**
-   * 自定义状态码
-   */
-  public static ResultDTO failed(Integer code){
-    return new ResultDTO(code,ResultDTO.FAILURE,null);
-  }
-
-  /**
-   * 自定义信息
-   */
-  public static ResultDTO failed(String message){
-    return new ResultDTO(400,message,null);
-  }
-
-  /**
-   * 提示信息+传参
-   * @param object 参数
-   * @return obj
-   */
-  public static ResultDTO failed(String msg,Object object){
-    return new ResultDTO(400,msg,object);
-  }
-  /**
-   * 状态码 + 提示信息
-   */
-  public static ResultDTO failed(Integer code,String message){
-    return new ResultDTO(code,message,null);
-  }
-
-
-
+    
+    /**
+     * 处理是否成功
+     */
+    private Boolean success;
+    /**
+     * 状态码
+     */
+    private Integer code;
+    
+    /**
+     * 提示信息
+     */
+    private String message;
+    
+    /**
+     * 参数
+     */
+    private Object data;
+    
+    private ResultDTO(){}
+    
+    private ResultDTO(Boolean success,Integer code, String message, Object data) {
+        this.success = success;
+        this.code = code;
+        this.message = message;
+        this.data = data;
+    }
+    
+    
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
+    }
+    
+    /**
+     * 默认成功
+     */
+    public  static ResultDTO success() {
+        ResultDTO resultDTO = new ResultDTO();
+        resultDTO.setSuccess(true);
+        return resultDTO;
+    }
+    
+    /**
+     * 自定义提示信息
+     */
+    public static ResultDTO success(String message) {
+        return new ResultDTO(true, null,message, null);
+    }
+    
+    /**
+     * 携带参数
+     */
+    public static ResultDTO success(Object data) {
+        ResultDTO resultDTO = new ResultDTO();
+        resultDTO.setSuccess(true);
+        resultDTO.setData(data);
+        return resultDTO;
+    }
+    
+    /**
+     * 自定义信息+携带参数
+     */
+    public static ResultDTO success(String message, Object object) {
+        return new ResultDTO(true,null, message, object);
+    }
+    
+    /**
+     * ************************
+     * 默认失败
+     * ************************
+     */
+    public static ResultDTO failed() {
+        ResultDTO resultDTO = new ResultDTO();
+        resultDTO.setSuccess(false);
+        return resultDTO;
+        
+    }
+    
+    
+    /**
+     * 状态码 + 提示信息
+     */
+    public static ResultDTO failed(ErrorCodeEnum errorCode) {
+        return new ResultDTO(false,errorCode.getCode(), errorCode.getMsg(), null);
+    }
+    
+    
+    /**
+     * 传参
+     *
+     * @param object 参数
+     * @return obj
+     */
+    public static ResultDTO failed(ErrorCodeEnum errorCode,Object object) {
+        ResultDTO resultDTO = new ResultDTO();
+        resultDTO.setSuccess(false);
+        resultDTO.setCode(errorCode.getCode());
+        resultDTO.setMessage(errorCode.getMsg());
+        resultDTO.setData(object);
+        return resultDTO;
+    }
+    
+    
+    
 }
