@@ -16,7 +16,7 @@ public class Employee {
      * 主键
      */
     @Null
-    private Integer id;
+    private Long id;
     /**
      * 员工姓名
      */
@@ -28,15 +28,15 @@ public class Employee {
     @Valid
     private Department dept;
     
-    
+    //@Valid
     private List<@Valid Employee> employeeList;
     
     
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
     
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
     

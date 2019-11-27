@@ -12,8 +12,11 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -42,8 +45,6 @@ public class MyExceptionHandler {
         request.setAttribute("ext", map);
         return "forward:/error";
     }*/
-
-
     @ExceptionHandler(UserNotExistException.class)
     public String handleMyException(UserNotExistException e, HttpServletRequest request) {
         request.setAttribute("javax.servlet.error.status_code", 500);
@@ -65,23 +66,32 @@ public class MyExceptionHandler {
     public ResultDTO handleMethodException(MethodArgumentNotValidException e) {
         BindingResult bindingResult = e.getBindingResult();
         Map<String, String> collect = null;
-        if (bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             collect = bindingResult.getFieldErrors().stream().collect(Collectors.toMap(FieldError::getField, FieldError::getDefaultMessage));
             log.error("MethodArgumentNotValidException are:[{}]", collect);
         }
-        return ResultDTO.failed(ErrorCodeEnum.PARAM_ERROR,collect);
+        return ResultDTO.failed(ErrorCodeEnum.PARAM_ERROR, collect);
     }
     
-    /**
-     * 未捕获异常
-     *
-     * @param e Exception
-     * @return 统一结果
-     */
-    @ExceptionHandler(Exception.class)
+    
+    @ExceptionHandler(ConstraintViolationException.class)
+    @ResponseBody
+    public ResultDTO handleConstraintViolationException(ConstraintViolationException e) {
+        Set<ConstraintViolation<?>> violationSet = e.getConstraintViolations();
+        
+        Map<Object, String> collect = null;
+        if (violationSet.size() > 0) {
+            collect = violationSet.stream()
+                              .collect(Collectors.toMap(ConstraintViolation::getPropertyPath, ConstraintViolation::getMessage));
+            log.error("ConstraintViolationException are:[{}]", collect);
+        }
+        return ResultDTO.failed(ErrorCodeEnum.PARAM_ERROR, collect);
+    }
+    
+    /*@ExceptionHandler(Exception.class)
     @ResponseBody
     public ResultDTO handleException(Exception e) {
         log.error("unknown error message is: [{}]", e.getMessage());
         return ResultDTO.failed(ErrorCodeEnum.UNKNOWN_ERROR);
-    }
+    }*/
 }
