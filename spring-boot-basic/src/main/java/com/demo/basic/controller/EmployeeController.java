@@ -4,7 +4,10 @@ import com.demo.basic.dto.ResultDTO;
 import com.demo.basic.entity.Employee;
 import com.demo.basic.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.groups.Default;
 
 /**
  * employee
@@ -13,17 +16,25 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/emp")
-//@Validated
+@Validated
 public class EmployeeController {
     
     @Autowired
     private IEmployeeService empService;
     
     @PostMapping("/add")
-    public ResultDTO addEmp(@RequestBody  /*@Valid*/ Employee employee){
+    public ResultDTO addEmp(@RequestBody  @Validated({Employee.Add.class}) Employee employee){
         empService.addEmployee(employee);
         return ResultDTO.success();
     }
+    
+    
+    @PostMapping("/update")
+    public ResultDTO updateEmp(@RequestBody  @Validated({Employee.Update.class, Default.class}) Employee employee){
+        empService.updateEmployee(employee);
+        return ResultDTO.success();
+    }
+    
     
     
     @GetMapping("/query")

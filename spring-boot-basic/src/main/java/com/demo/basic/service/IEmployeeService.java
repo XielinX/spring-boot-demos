@@ -17,4 +17,7 @@ public interface IEmployeeService {
     
     // 返回值不能为null
     @NotNull Employee getEmployeeById(Long id);
+    
+    
+    void updateEmployee(@Valid Employee employee);
 }

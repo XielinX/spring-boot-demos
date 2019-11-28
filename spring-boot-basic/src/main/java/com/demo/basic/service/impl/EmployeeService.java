@@ -30,4 +30,9 @@ public class EmployeeService implements IEmployeeService {
     public @NotNull Employee getEmployeeById(Long id) {
         return null;
     }
+    
+    @Override
+    public void updateEmployee(Employee employee) {
+        // 业务处理
+    }
 }

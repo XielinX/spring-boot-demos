@@ -1,4 +1,4 @@
-package com.demo.basic.controller;
+package com.demo.basic.config.webmvc;
 
 import com.demo.basic.dto.ResultDTO;
 import com.demo.basic.enums.ErrorCodeEnum;
