@@ -15,6 +15,7 @@ import javax.validation.groups.Default;
  */
 public class Employee {
     
+    // 为什么要写接口???
     public interface Add extends Default {}
     public interface Update{}
     
