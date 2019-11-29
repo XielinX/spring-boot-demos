@@ -3,6 +3,7 @@ package com.demo.basic.config.webmvc;
 import com.demo.basic.dto.ResultDTO;
 import com.demo.basic.enums.ErrorCodeEnum;
 import com.demo.basic.exception.UserNotExistException;
+import com.demo.basic.exception.ValidListException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import javax.validation.Path;
+import javax.validation.ValidationException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -56,7 +59,7 @@ public class MyExceptionHandler {
     }
     
     /**
-     * 方法参数校验异常
+     * Controller层出现的方法参数校验异常
      *
      * @param e MethodArgumentNotValidException
      * @return 统一返回结果
@@ -73,13 +76,18 @@ public class MyExceptionHandler {
         return ResultDTO.failed(ErrorCodeEnum.PARAM_ERROR, collect);
     }
     
-    
+    /**
+     * Service层出现的校验异常
+     *
+     * @param e 约束异常
+     * @return 统一结果
+     */
     @ExceptionHandler(ConstraintViolationException.class)
     @ResponseBody
     public ResultDTO handleConstraintViolationException(ConstraintViolationException e) {
         Set<ConstraintViolation<?>> violationSet = e.getConstraintViolations();
         
-        Map<Object, String> collect = null;
+        Map<Path, String> collect = null;
         if (violationSet.size() > 0) {
             collect = violationSet.stream()
                               .collect(Collectors.toMap(ConstraintViolation::getPropertyPath, ConstraintViolation::getMessage));
@@ -88,10 +96,30 @@ public class MyExceptionHandler {
         return ResultDTO.failed(ErrorCodeEnum.PARAM_ERROR, collect);
     }
     
-    /*@ExceptionHandler(Exception.class)
+    @ExceptionHandler(ValidationException.class)
+    @ResponseBody
+    public ResultDTO handleValidListException(ValidListException e) {
+        Map<Integer, Map<Path, String>> map = new HashMap<>();
+        
+        Map<Integer, Set<ConstraintViolation<Object>>> errorMap = e.getErrorMap();
+        errorMap.forEach((integer, constraintViolations) ->
+            map.put(integer, constraintViolations.stream()
+                                     .collect(Collectors.toMap(ConstraintViolation::getPropertyPath, ConstraintViolation::getMessage)))
+        );
+        
+        return ResultDTO.failed(ErrorCodeEnum.PARAM_ERROR, map);
+    }
+    
+    /**
+     * 未捕获异常
+     *
+     * @param e Exception
+     * @return 统一结果
+     */
+    @ExceptionHandler(Exception.class)
     @ResponseBody
     public ResultDTO handleException(Exception e) {
-        log.error("unknown error message is: [{}]", e.getMessage());
+        log.error("未捕获异常: [{}]", e.getMessage());
         return ResultDTO.failed(ErrorCodeEnum.UNKNOWN_ERROR);
-    }*/
+    }
 }
