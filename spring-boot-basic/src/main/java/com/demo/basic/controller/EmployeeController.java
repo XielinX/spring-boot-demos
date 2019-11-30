@@ -38,6 +38,12 @@ public class EmployeeController {
         return ResultDTO.success();
     }
     
+    
+    @PostMapping("/updateTitle")
+    public ResultDTO updateEmpWithTitle(@RequestBody  @Valid Employee employee){
+        return ResultDTO.success();
+    }
+    
     @PostMapping("/list")
     public ResultDTO addEmpByBatch(@RequestBody  @ValidList(grouping = {Employee.Add.class, Default.class},quickFail = true) List<Employee> empList){
         //

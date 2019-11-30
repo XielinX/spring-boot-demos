@@ -1,5 +1,7 @@
 package com.demo.basic.entity;
 
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.validation.annotation.Validated;
 
@@ -10,6 +12,7 @@ import javax.validation.constraints.Null;
 import javax.validation.constraints.PastOrPresent;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * 部门实体类
@@ -44,6 +47,16 @@ public class Department implements Serializable {
     @PastOrPresent
     private LocalDateTime createTime;
     
+    /**
+     * 部门的员工
+     */
+    private List<@Valid Employee> empList;
+    
+    @Override
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.JSON_STYLE);
+    }
+    
     
     public Long getId() {
         return id;
@@ -76,4 +89,13 @@ public class Department implements Serializable {
     public void setCreateTime(LocalDateTime createTime) {
         this.createTime = createTime;
     }
+    
+    public List<Employee> getEmpList() {
+        return empList;
+    }
+    
+    public void setEmpList(List<Employee> empList) {
+        this.empList = empList;
+    }
+    
 }
