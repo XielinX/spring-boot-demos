@@ -1,6 +1,7 @@
 # 分模块项目
 ## spring-boot-basic
 + spring-boot基础
++ Hibernate-Validation
 ## spring-boot-rabbitmq
 + 消息组件RabbitMq
 ## spring-boot-shiro
