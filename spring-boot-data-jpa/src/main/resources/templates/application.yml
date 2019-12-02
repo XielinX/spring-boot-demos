@@ -1,0 +1,7 @@
+spring:
+  # 数据源
+  datasource:
+    username: mango
+    password: root5.7.22
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jpa
