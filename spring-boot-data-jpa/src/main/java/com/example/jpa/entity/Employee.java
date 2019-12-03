@@ -7,6 +7,7 @@ import java.time.LocalDate;
  * employee实体类
  * @author xielx at 2019/12/2 22:11
  */
+
 @Entity
 @Table(name = "employee")
 public class Employee {
