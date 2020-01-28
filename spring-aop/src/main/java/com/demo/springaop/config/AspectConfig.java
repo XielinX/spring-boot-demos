@@ -4,6 +4,7 @@ import com.demo.springaop.service.IQuery;
 import com.demo.springaop.service.QueryImpl;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
@@ -12,7 +13,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  *
  * @author xielx at 2020/1/27 20:38
  */
-@Configuration
+@ComponentScan("com.demo.springaop")
 @EnableAspectJAutoProxy
 public class AspectConfig {
 

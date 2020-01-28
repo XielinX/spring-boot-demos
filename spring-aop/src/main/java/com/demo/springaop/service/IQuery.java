@@ -9,4 +9,6 @@ public interface IQuery {
     
     
     void query();
+    void query1(String s1);
+    void query2(String s1,String s2);
 }

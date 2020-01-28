@@ -6,7 +6,6 @@
         <groupId>com.demo</groupId>
         <artifactId>spring-boot-demos</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>./</relativePath>
     </parent>
 
     <artifactId>spring-aop</artifactId>
@@ -24,7 +23,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+
+        <!-- lombok插件-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.6</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
+
+
 
     <build>
         <plugins>
