@@ -29,6 +29,7 @@
         <module>spring-boot-shiro</module>
         <module>spring-boot-basic</module>
         <module>spring-boot-rabbitmq</module>
+        <module>spring-boot-data-jpa</module>
 		<module>spring-security</module>
     </modules>
 

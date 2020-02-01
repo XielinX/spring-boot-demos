@@ -1,15 +1,13 @@
 package com.demo.springaop.aspect;
 
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 
 /**
- * 声明一个切面
+ * 切面:1.声明为切面 2.交给spring管理,即为bean
  *
  * @author xielx at 2020/1/27 20:37
  */
@@ -65,9 +63,19 @@ public class MyAspect {
     }
     
     
-    @Before("pointCutTarget()")
+    @Before("pointCutThis()")
     public void doBeforeWithThis() {
         log.info("**************aop before this*************");
     }
+    
+   // @Around("myPointCut()")
+    public void doAround(ProceedingJoinPoint pjp) throws Throwable {
+        log.info("**************aop around*************");
+        // 获取参数
+        Object[] args = pjp.getArgs();
+        Object proceed = pjp.proceed();
+        
+    }
+    
     
 }
