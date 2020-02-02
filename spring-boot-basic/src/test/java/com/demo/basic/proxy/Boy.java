@@ -1,8 +1,7 @@
-package com.demo.basic.proxy.staticproxy.entity;
+package com.demo.basic.proxy;
 
-import com.demo.basic.proxy.staticproxy.IAction;
 /**
- * 追求者: 模拟静态代理的目标对象
+ * 追求者: 模拟动态代理的目标对象
  *
  * @author xielx at 2020/2/1 16:14
  */

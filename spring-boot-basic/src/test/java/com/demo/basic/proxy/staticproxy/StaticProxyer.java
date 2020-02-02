@@ -1,13 +1,14 @@
-package com.demo.basic.proxy.staticproxy.entity;
+package com.demo.basic.proxy.staticproxy;
 
-import com.demo.basic.proxy.staticproxy.IAction;
+import com.demo.basic.proxy.Boy;
+import com.demo.basic.proxy.IAction;
 
 /**
  * 委托人: 男孩害羞,委托这个人去和女孩传信
  *
  * @author xielx at 2020/2/1 16:14
  */
-public class Proxyer implements IAction {
+public class StaticProxyer implements IAction {
     
     
     /**
@@ -20,7 +21,7 @@ public class Proxyer implements IAction {
      */
     private  Boy boy;
     
-    public Proxyer(String name, Boy boy) {
+    public StaticProxyer(String name, Boy boy) {
         this.name = name;
         this.boy = boy;
     }

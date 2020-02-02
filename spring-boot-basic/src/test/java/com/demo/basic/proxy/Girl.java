@@ -1,4 +1,4 @@
-package com.demo.basic.proxy.staticproxy.entity;
+package com.demo.basic.proxy;
 
 /**
  * 被追求者

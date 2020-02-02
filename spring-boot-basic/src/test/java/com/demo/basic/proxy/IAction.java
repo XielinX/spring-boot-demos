@@ -1,4 +1,4 @@
-package com.demo.basic.proxy.staticproxy;
+package com.demo.basic.proxy;
 
 /**
  * 表白行为
