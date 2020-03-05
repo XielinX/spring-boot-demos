@@ -36,3 +36,8 @@ build/
 /spring-boot-shiro/.mvn
 /spring-boot-shiro/target
 /spring-boot-shiro/*.iml
+/spring-boot-rabbitmq/.mvn
+/spring-boot-rabbitmq/target
+/spring-boot-email/.mvn
+/spring-boot-data-jpa/.mvn
+/spring-boot-data-jpa/.mvn
