@@ -29,10 +29,3 @@ build/
 
 ### VS Code ###
 .vscode/
-/.idea/codeStyles
-/.idea
-/spring-security/.mvn
-/spring-boot-shiro/.idea
-/spring-boot-shiro/.mvn
-/spring-boot-shiro/target
-/spring-boot-shiro/*.iml
