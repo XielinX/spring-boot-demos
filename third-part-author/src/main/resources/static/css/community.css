@@ -1,0 +1,203 @@
+
+body {
+    background-color: #efefef;
+}
+
+.main {
+    background-color: white;
+    margin: 30px;
+}
+
+.btn-publish {
+    float: right;
+    margin-bottom: 15px;
+}
+.side {
+    margin: 2px 0;
+}
+
+
+.text-desc {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+}
+.nav-avatar img{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.nav-badges{
+    z-index: -1;
+    margin-top: -10px;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+
+.media-object {
+    width: 38px;
+    height: 38px;
+}
+
+.media-body {
+    padding-top: 10px;
+    text-decoration: none;
+}
+.media-heading a{
+    text-decoration: none;
+}
+.topic-body{
+    padding-top: 5px;
+}
+.topic-desc {
+    font-size: 10px;
+    font-weight: normal;
+    color: #999;
+}
+
+
+.profile .section {
+    margin-top: 15px;
+}
+
+.question-title {
+    margin-top: 25px;
+}
+
+.question-tag {
+    margin-right: 5px;
+}
+
+.question-related {
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.question-wechat {
+    width: 100%;
+}
+
+.publish-tag-tab {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.publish-tag-tab .label-info {
+    white-space: normal;
+    margin: 5px 5px;
+    display: inline-block;
+}
+
+.community-menu {
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+.jumbotron {
+    margin: 50px;
+}
+
+.comment {
+    margin: 10px 0;
+}
+
+.btn-comment {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.comments {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.sub-comments {
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #eee;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sub-comments .btn {
+    margin: 10px 0;
+}
+
+.comment-sp {
+    margin-top: 0;
+}
+
+.menu {
+    color: #999;
+    margin-top: 5px;
+}
+
+.menu .icon {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu .comment-icon {
+    font-size: 15px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.menu .comment-icon :hover {
+    color: #499ef3;
+}
+
+.menu .active {
+    color: #499ef3;
+}
+
+.menu .icon:hover {
+    color: #499ef3;
+}
+
+.tag-one {
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    color: #666;
+}
+
+
+.video{
+   padding: 20px;
+}
+
+.video img{
+    width: 50%;
+    margin: 0px 20px 0px 80px;
+}
+.video h5{
+    margin-left: 80px;
+}
+.video-details{
+    line-height: 20px;
+    font-size: 12px;
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
+}

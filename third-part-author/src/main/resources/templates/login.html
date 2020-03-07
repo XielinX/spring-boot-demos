@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common :: common_head(~{::title})">
+    <title>登录页面</title>
+</head>
+<body>
+<div class="container" style="width: 60%;">
+    <div class="row clearfix">
+        <div class="col-md-12 banner">
+            <div class="page-header">
+                <h1 class="titleLogin">
+                    <span class="glyphicon glyphicon-th"></span> 登录
+                    <span style="float: right; font-size: 13px;">还没账号,现在就
+                        <button class="btn btn-default btnReg" data-toggle="tooltip" data-placement="bottom" title="注册"
+                                onclick="doOptions(this)">注册</button>
+                    </span>
+
+                </h1>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!--数据表单-->
+            <form class="form-horizontal" role="form">
+                <!-- 用户名 -->
+                <div class="form-group has-feedback">
+                    <label for="username" class="col-sm-2 control-label">用户名</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="username" name="username" value="41381772"
+                               placeholder="请输入您的真实姓名" autocomplete="off" required>
+                        <span class="glyphicon glyphicon-user form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <!-- 密码 -->
+                <div class="form-group has-feedback">
+                    <label for="password" class="col-sm-2 control-label">密码</label>
+                    <div class="col-sm-5">
+                        <input type="password" class="form-control" id="password" name="password" value="41381772"
+                               placeholder="请输入密码" required>
+                        <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
+                    </div>
+                </div>
+
+                <!--记住我-->
+                <div class="form-group has-success loginRemember">
+                    <div class="col-xs-offset-2 col-sm-4 checkbox">
+                        <label>
+                            <input type="checkbox" id="rem" name="rememberMe" checked="checked"> <span
+                                data-toggle="tooltip" title="记住我!">记住我</span>
+                        </label>
+                    </div>
+
+                </div>
+                <!--按钮-->
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" id="btnBig" class="btn btn-primary btnLogin" onclick="login()">登录
+                        </button>
+
+                        <h6 class="bigBtnDown">
+                            <a th:href="@{/forgetPwd}" data-toggle="tooltip" data-placement="bottom"
+                               title="忘记密码!">忘记密码?</a>
+                        </h6>
+
+                    </div>
+                </div>
+                <!--  第三方登录-->
+                <div th:replace="~{common::third_way}"></div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+<script  th:src="@{/js/login.js}"></script>
+</body>
+</html>
