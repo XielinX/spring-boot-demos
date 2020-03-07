@@ -31,6 +31,7 @@
         <module>spring-boot-rabbitmq</module>
         <module>spring-boot-data-jpa</module>
 		<module>spring-security</module>
+		<module>third-part-author</module>
     </modules>
 
     <dependencies>
