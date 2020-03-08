@@ -16,8 +16,8 @@ public class GitHubAccessTokenDTO extends AbstractAccessToken {
      */
     private String state; // 随机字符串
     
-    public GitHubAccessTokenDTO(String code, String client_id, String client_secret, String redirect_ur, String state) {
-        super(code, client_id, client_secret, redirect_ur);
+    public GitHubAccessTokenDTO(String code, String client_id, String client_secret, String redirect_uri, String state) {
+        super(code, client_id, client_secret, redirect_uri);
         this.state = state;
     }
     

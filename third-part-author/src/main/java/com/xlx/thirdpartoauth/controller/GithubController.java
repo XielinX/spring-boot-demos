@@ -2,6 +2,7 @@ package com.xlx.thirdpartoauth.controller;
 
 import com.xlx.thirdpartoauth.dto.AbstractAccessToken;
 import com.xlx.thirdpartoauth.dto.GitHubAccessTokenDTO;
+import com.xlx.thirdpartoauth.dto.GiteeAccessTokenDTO;
 import com.xlx.thirdpartoauth.provider.GitHubProvider;
 import com.xlx.thirdpartoauth.provider.GitHubUser;
 import lombok.extern.slf4j.Slf4j;
@@ -41,17 +42,17 @@ public class GithubController {
 
   /**
    *  github认证后,进行回调uri
-   * @param code .
-   * @param state .
-   * @param response .
-   * @return str
+   * @param code 认证返回的code值
+   * @param state 返回原state值,用于校验
+   * @return html
    */
   @GetMapping("/callback")
   public String callback(@RequestParam(name = "code") String code,
-                         @RequestParam(name = "state") String state,
-                         HttpServletResponse response) {
+                         @RequestParam(name = "state") String state) {
 
-    AbstractAccessToken accessTokenDTO = new GitHubAccessTokenDTO(clientId,clientSecret,code,redirectUri,state);
+    log.info("code={}",code);
+    log.info("state={}",state);
+     GitHubAccessTokenDTO accessTokenDTO = new GitHubAccessTokenDTO(code,clientId,clientSecret,redirectUri,state);
 
     // 经过授权,获取access_token
     String  accessToken = gitHubProvider.getAccessToken(accessTokenDTO);
@@ -59,7 +60,6 @@ public class GithubController {
     GitHubUser gitHubUser = gitHubProvider.getGitHubUser(accessToken);
     if(gitHubUser != null && gitHubUser.getId() != null){
       // 数据库操作,记录第三方账号信息
-  
     }else {
       //登录失败,重写登录
     }

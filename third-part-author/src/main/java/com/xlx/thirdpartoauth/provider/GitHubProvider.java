@@ -41,14 +41,14 @@ public class GitHubProvider {
       ResponseBody responseBody = response.body();
       if (responseBody == null){
         log.error("获取响应体失败~~~~~~");
-        throw new CustomizeException("获取响应体失败[{}]");
+        throw new CustomizeException("获取响应体失败");
       }
       String str = responseBody.string();
       return str.split("&")[0].split("=")[1];
 
     } catch (IOException e) {
       log.error("获取token失败:[{}]",e.getMessage());
-      throw new ClassCastException(e.getMessage());
+      throw new CustomizeException(e.getMessage());
     }
   }
 
@@ -73,7 +73,8 @@ public class GitHubProvider {
       String strUser = body.string();
       return JSON.parseObject(strUser, GitHubUser.class);
     } catch (IOException e) {
-      throw new ClassCastException(e.getMessage());
+      log.error("获取github用户信息异常:{}",e.getMessage());
+      throw new CustomizeException(e.getMessage());
     }
 
   }

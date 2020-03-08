@@ -32,6 +32,11 @@ public abstract class AbstractAccessToken {
         this.redirect_uri = redirect_uri;
     }
     
+    public AbstractAccessToken(String client_id, String client_secret) {
+        this.client_id = client_id;
+        this.client_secret = client_secret;
+    }
+    
     public AbstractAccessToken() {
     
     }

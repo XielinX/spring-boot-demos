@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Slf4j
 @Controller
-public class OSChinaController {
+public class GiteeController {
     
     @Value("${gitee.client.id}")
     private String clientId;

@@ -2,6 +2,8 @@ package com.xlx.thirdpartoauth.dto;
 
 import com.xlx.thirdpartoauth.enums.ErrorCodeEnum;
 
+import java.util.Objects;
+
 /**
  * 统一操作结果
  *
@@ -81,7 +83,14 @@ public class ResultDTO {
         return new ResultDTO(400,ResultDTO.FAILURE,null);
     }
     
+    public static ResultDTO failed(String message){
+        return new ResultDTO(400,message,null);
+    }
     
+    
+    public static ResultDTO failed(Integer code,String message){
+        return new ResultDTO(code,message,null);
+    }
     /**
      * 失败
      * @param errorCodeEnum 枚举参数
@@ -90,6 +99,12 @@ public class ResultDTO {
     public static ResultDTO failed(ErrorCodeEnum errorCodeEnum){
         return new ResultDTO(errorCodeEnum.getCode(),errorCodeEnum.getMessage(),null);
     }
+    
+    
+    public static ResultDTO failed(ErrorCodeEnum errorCodeEnum, Object data){
+        return new ResultDTO(errorCodeEnum.getCode(),errorCodeEnum.getMessage(),data);
+    }
+    
     
     
     

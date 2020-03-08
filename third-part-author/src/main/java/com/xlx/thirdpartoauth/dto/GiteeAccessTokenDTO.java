@@ -7,7 +7,7 @@ package com.xlx.thirdpartoauth.dto;
 public class GiteeAccessTokenDTO  extends AbstractAccessToken{
 
   /**
-   *
+   * 固定值
    */
   private String grant_type;
   /**
@@ -15,10 +15,21 @@ public class GiteeAccessTokenDTO  extends AbstractAccessToken{
    */
   private String state;
   
+  /**
+   * 刷新过期的token
+   */
+  private String refresh_token;
+  
   public GiteeAccessTokenDTO(String code, String client_id, String client_secret, String redirect_uri, String grant_type, String state) {
     super(code, client_id, client_secret, redirect_uri);
     this.grant_type = grant_type;
     this.state = state;
+  }
+  
+  public GiteeAccessTokenDTO(String client_id, String client_secret, String grant_type,String refresh_token) {
+    super(client_id, client_secret);
+    this.grant_type = grant_type;
+    this.refresh_token = refresh_token;
   }
   
   public GiteeAccessTokenDTO(String grant_type, String state) {

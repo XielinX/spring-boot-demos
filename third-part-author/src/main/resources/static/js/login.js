@@ -15,7 +15,7 @@ function openWindow(url,width,height) {
 function qqLogin()
 {
     const qqAppId = '1110316944'; // 上面申请得到的appid
-    const qqAuthPath = 'http://www.test.com/auth'; // 前面设置的回调地址
+    const redirect_uri = 'http://localhost:8887/callbackToQQ'; // 前面设置的回调地址
     const state = 'fjdslfjsdlkfd'; // 防止CSRF攻击的随机参数，必传，登录成功之后会回传，最好后台自己生成然后校验合法性
-    openWindow(`https://graph.qq.com/oauth2.0/authorize?response_type=token&client_id=${qqAppId}&redirect_uri=${encodeURIComponent(qqAuthPath)}&state=${state}`);
+    openWindow(`https://graph.qq.com/oauth2.0/authorize?response_type=token&client_id=${qqAppId}&redirect_uri=${encodeURIComponent(redirect_uri)}&state=${state}`);
 }

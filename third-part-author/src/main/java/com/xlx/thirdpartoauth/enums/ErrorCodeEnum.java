@@ -8,7 +8,9 @@ package com.xlx.thirdpartoauth.enums;
 public enum ErrorCodeEnum {
     
     SYSTEM_ERROR(9999,"系统异常"),
-    AUTHORIZED_FAILED(1001,"授权失败")
+    AUTHORIZED_FAILED(1001,"授权失败"),
+    GET_USER_INFO_FAILED(1002,"获取用户信息失败"),
+    PARAMS_VALIDATE_ERROR(1003,"参数检验错误")
     ;
     
     /**
