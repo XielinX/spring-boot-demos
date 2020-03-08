@@ -1,4 +1,4 @@
-package com.xlx.thirdpartauthor.enums;
+package com.xlx.thirdpartoauth.enums;
 
 /**
  * 错误信息提示枚举类

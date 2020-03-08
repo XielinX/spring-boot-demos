@@ -1,13 +1,13 @@
-package com.xlx.thirdpartauthor;
+package com.xlx.thirdpartoauth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ThirdPartAuthorApplication {
+public class ThirdPartOAuthApplication {
     
     public static void main(String[] args) {
-        SpringApplication.run(ThirdPartAuthorApplication.class, args);
+        SpringApplication.run(ThirdPartOAuthApplication.class, args);
     }
     
 }

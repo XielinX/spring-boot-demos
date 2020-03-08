@@ -1,6 +1,6 @@
-package com.xlx.thirdpartauthor.dto;
+package com.xlx.thirdpartoauth.dto;
 
-import com.xlx.thirdpartauthor.enums.ErrorCodeEnum;
+import com.xlx.thirdpartoauth.enums.ErrorCodeEnum;
 
 /**
  * 统一操作结果

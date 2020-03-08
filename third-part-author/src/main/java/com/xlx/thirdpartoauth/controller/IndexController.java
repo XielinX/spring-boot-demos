@@ -1,4 +1,4 @@
-package com.xlx.thirdpartauthor.controller;
+package com.xlx.thirdpartoauth.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
