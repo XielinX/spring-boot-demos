@@ -1,4 +1,4 @@
-package com.xlx.thirdpartoauth.provider;
+package com.xlx.thirdpartoauth.dto;
 
 import lombok.Data;
 

@@ -3,8 +3,7 @@ package com.xlx.thirdpartoauth.controller;
 import com.xlx.thirdpartoauth.dto.GiteeAccessTokenDTO;
 import com.xlx.thirdpartoauth.dto.ResultDTO;
 import com.xlx.thirdpartoauth.provider.QQProvider;
-import com.xlx.thirdpartoauth.provider.QQUser;
-import lombok.extern.slf4j.Slf4j;
+import com.xlx.thirdpartoauth.dto.QQUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -38,7 +37,7 @@ public class QQController {
     /**
      * 调用回调函数
      *
-     * @param code  认证后返回的code值
+     * @param code  认证后返回的code值,有效期:10min
      * @param state 原state值,校验状态值,防止CSRF攻击
      * @return html
      */
@@ -53,7 +52,9 @@ public class QQController {
         // 获取Access_Token
         final String accessToken = qqProvider.getAccessToken(accessTokenDTO);
         // 校验token过期
+        // openId
         final String openId = qqProvider.getOpenId(accessToken);
+        // QQ用户信息
         QQUser qqUser = qqProvider.getUserInfo(accessToken, clientId, openId);
         return ResultDTO.success(qqUser);
     }

@@ -2,6 +2,8 @@ package com.xlx.thirdpartoauth.controller;
 
 import com.xlx.thirdpartoauth.dto.GiteeAccessTokenDTO;
 import com.xlx.thirdpartoauth.dto.GiteeUser;
+import com.xlx.thirdpartoauth.dto.ResultDTO;
+import com.xlx.thirdpartoauth.enums.ErrorCodeEnum;
 import com.xlx.thirdpartoauth.provider.GiteeProvider;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,9 +41,9 @@ public class GiteeController {
      * @return .
      */
     @GetMapping("/callbackToMY")
-    public String callbackToMY(@RequestParam(name = "code") String code,
-                               @RequestParam(name = "state") String state,
-                               HttpServletResponse response) {
+    public ResultDTO callbackToMY(@RequestParam(name = "code") String code,
+                                  @RequestParam(name = "state") String state,
+                                  HttpServletResponse response) {
         GiteeAccessTokenDTO tokenDTO = new GiteeAccessTokenDTO(code, clientId, clientSecret,redirectUri,"authorization_code",state);
         
         String accessToken = giteeProvider.getAccessToken(tokenDTO);
@@ -50,8 +52,9 @@ public class GiteeController {
         GiteeUser giteeUser = giteeProvider.getUserInfo(accessToken);
         if (giteeUser != null && giteeUser.getId() != null) {
             // 数据库操作,存储第三方用户信息
+            return ResultDTO.success(giteeUser);
         }
-        return "redirect:/";
+        return ResultDTO.failed(ErrorCodeEnum.GET_USER_INFO_FAILED,new GiteeUser());
         
     }
 }

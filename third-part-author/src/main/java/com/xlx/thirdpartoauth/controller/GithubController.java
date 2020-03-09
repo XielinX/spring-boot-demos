@@ -1,10 +1,10 @@
 package com.xlx.thirdpartoauth.controller;
 
-import com.xlx.thirdpartoauth.dto.AbstractAccessToken;
 import com.xlx.thirdpartoauth.dto.GitHubAccessTokenDTO;
-import com.xlx.thirdpartoauth.dto.GiteeAccessTokenDTO;
+import com.xlx.thirdpartoauth.dto.ResultDTO;
+import com.xlx.thirdpartoauth.enums.ErrorCodeEnum;
 import com.xlx.thirdpartoauth.provider.GitHubProvider;
-import com.xlx.thirdpartoauth.provider.GitHubUser;
+import com.xlx.thirdpartoauth.dto.GitHubUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * github认证
@@ -47,8 +46,8 @@ public class GithubController {
    * @return html
    */
   @GetMapping("/callback")
-  public String callback(@RequestParam(name = "code") String code,
-                         @RequestParam(name = "state") String state) {
+  public ResultDTO callback(@RequestParam(name = "code") String code,
+                            @RequestParam(name = "state") String state) {
 
     log.info("code={}",code);
     log.info("state={}",state);
@@ -60,10 +59,9 @@ public class GithubController {
     GitHubUser gitHubUser = gitHubProvider.getGitHubUser(accessToken);
     if(gitHubUser != null && gitHubUser.getId() != null){
       // 数据库操作,记录第三方账号信息
-    }else {
-      //登录失败,重写登录
+      return ResultDTO.success(gitHubUser);
     }
-    return "redirect:/";
+    return ResultDTO.failed(ErrorCodeEnum.GET_USER_INFO_FAILED,new GitHubUser());
   }
 
 

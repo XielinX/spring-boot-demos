@@ -2,7 +2,7 @@ package com.xlx.thirdpartoauth.provider;
 
 import com.alibaba.fastjson.JSON;
 import com.xlx.thirdpartoauth.dto.AbstractAccessToken;
-import com.xlx.thirdpartoauth.dto.GitHubAccessTokenDTO;
+import com.xlx.thirdpartoauth.dto.GitHubUser;
 import com.xlx.thirdpartoauth.exception.CustomizeException;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
@@ -57,7 +57,7 @@ public class GitHubProvider {
    * @param accessToken 授权的token
    * @return 封装的用户信息
    */
-  public  GitHubUser getGitHubUser(String accessToken) {
+  public GitHubUser getGitHubUser(String accessToken) {
     OkHttpClient client = new OkHttpClient();
     // GET方式
     Request request = new Request.Builder()

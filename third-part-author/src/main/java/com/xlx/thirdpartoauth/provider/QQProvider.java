@@ -2,7 +2,7 @@ package com.xlx.thirdpartoauth.provider;
 
 import com.alibaba.fastjson.JSON;
 import com.xlx.thirdpartoauth.dto.AbstractAccessToken;
-import com.xlx.thirdpartoauth.dto.GiteeAccessTokenDTO;
+import com.xlx.thirdpartoauth.dto.QQUser;
 import com.xlx.thirdpartoauth.enums.ErrorCodeEnum;
 import com.xlx.thirdpartoauth.exception.CustomizeException;
 import lombok.extern.slf4j.Slf4j;
@@ -46,7 +46,7 @@ public class QQProvider {
             
             String str = responseBody.string();
             log.info("响应数据:{}",str);
-            // 抽取必要数据,access_token,expires_in,refresh_token
+            // 截取必要数据,access_token,expires_in,refresh_token
             return "";
         } catch (IOException e) {
             log.error("获取token失败:[{}]",e.getMessage());
@@ -63,9 +63,9 @@ public class QQProvider {
     public String getOpenId(String accessToken){
         OkHttpClient client = new OkHttpClient();
         // GET
-        String open_id_api = "https://graph.qq.com/oauth2.0/me";
+        String open_id_api = "https://graph.qq.com/oauth2.0/me?access_token=";
         final Request request = new Request.Builder()
-                                      .url(open_id_api)
+                                      .url(open_id_api + accessToken)
                                       .build();
     
         try(final Response response = client.newCall(request).execute()){
@@ -90,7 +90,7 @@ public class QQProvider {
      * @param openId step3的openId
      * @return QQ用户信息
      */
-    public QQUser getUserInfo(String accessToken,String appId,String openId) {
+    public QQUser getUserInfo(String accessToken, String appId, String openId) {
     
         String url = "https://graph.qq.com/user/get_user_info?access_token=%s&oauth_consumer_key=%s&openid=%s";
         OkHttpClient client = new OkHttpClient();
