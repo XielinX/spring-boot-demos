@@ -1,7 +1,7 @@
 package com.xlx.thirdpartoauth.controller;
 
 import com.xlx.thirdpartoauth.dto.GiteeAccessTokenDTO;
-import com.xlx.thirdpartoauth.dto.GiteeUser;
+import com.xlx.thirdpartoauth.entity.GiteeUser;
 import com.xlx.thirdpartoauth.dto.ResultDTO;
 import com.xlx.thirdpartoauth.enums.ErrorCodeEnum;
 import com.xlx.thirdpartoauth.provider.GiteeProvider;
@@ -44,6 +44,8 @@ public class GiteeController {
     public ResultDTO callbackToMY(@RequestParam(name = "code") String code,
                                   @RequestParam(name = "state") String state,
                                   HttpServletResponse response) {
+        log.info("code={}",code);
+        log.info("state={}",state);
         GiteeAccessTokenDTO tokenDTO = new GiteeAccessTokenDTO(code, clientId, clientSecret,redirectUri,"authorization_code",state);
         
         String accessToken = giteeProvider.getAccessToken(tokenDTO);

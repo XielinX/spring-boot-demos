@@ -2,7 +2,7 @@ package com.xlx.thirdpartoauth.provider;
 
 import com.alibaba.fastjson.JSON;
 import com.xlx.thirdpartoauth.dto.AbstractAccessToken;
-import com.xlx.thirdpartoauth.dto.QQUser;
+import com.xlx.thirdpartoauth.entity.QQUser;
 import com.xlx.thirdpartoauth.enums.ErrorCodeEnum;
 import com.xlx.thirdpartoauth.exception.CustomizeException;
 import lombok.extern.slf4j.Slf4j;

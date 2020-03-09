@@ -3,7 +3,7 @@ package com.xlx.thirdpartoauth.controller;
 import com.xlx.thirdpartoauth.dto.GiteeAccessTokenDTO;
 import com.xlx.thirdpartoauth.dto.ResultDTO;
 import com.xlx.thirdpartoauth.provider.QQProvider;
-import com.xlx.thirdpartoauth.dto.QQUser;
+import com.xlx.thirdpartoauth.entity.QQUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

@@ -2,7 +2,7 @@ package com.xlx.thirdpartoauth.provider;
 
 import com.alibaba.fastjson.JSON;
 import com.xlx.thirdpartoauth.dto.AbstractAccessToken;
-import com.xlx.thirdpartoauth.dto.GitHubUser;
+import com.xlx.thirdpartoauth.entity.GitHubUser;
 import com.xlx.thirdpartoauth.exception.CustomizeException;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
@@ -37,9 +37,8 @@ public class GitHubProvider {
             .post(body)
             .build();
     try (Response response = client.newCall(request).execute()) {
-      //404
       ResponseBody responseBody = response.body();
-      if (responseBody == null){
+      if (!response.isSuccessful() || responseBody == null){
         log.error("获取响应体失败~~~~~~");
         throw new CustomizeException("获取响应体失败");
       }
@@ -53,7 +52,7 @@ public class GitHubProvider {
   }
 
   /**
-   * 获取github用户信息
+   *  step3:获取github用户信息
    * @param accessToken 授权的token
    * @return 封装的用户信息
    */

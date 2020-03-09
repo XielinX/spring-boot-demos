@@ -3,7 +3,7 @@ package com.xlx.thirdpartoauth.provider;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.xlx.thirdpartoauth.dto.GiteeAccessTokenDTO;
-import com.xlx.thirdpartoauth.dto.GiteeUser;
+import com.xlx.thirdpartoauth.entity.GiteeUser;
 import com.xlx.thirdpartoauth.exception.CustomizeException;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.*;
@@ -94,49 +94,5 @@ public class GiteeProvider {
             log.error("获取token失败:[{}]", e.getMessage());
             throw new CustomizeException(e.getMessage());
         }
-        
     }
-    
-    
-    /**
-     * 刷新token
-     *
-     * @param refreshToken fresh
-     * @return .
-     */
-    public String getRefreshToken(String refreshToken) {
-        
-        OkHttpClient client = new OkHttpClient();
-        MediaType mediaType = MediaType.get("application/json;charset=utf-8");
-        Map<String, String> param = new HashMap<>();
-        //uri参数
-        param.put("grantType", "refresh_token");
-        param.put("refreshToken", refreshToken);
-        
-        RequestBody body = RequestBody.create(mediaType, JSON.toJSONString(param));
-        //POST请求
-        Request request = new Request.Builder()
-                                  .url(OAUTH_TOKEN_API)
-                                  .post(body)
-                                  .build();
-        try (Response response = client.newCall(request).execute()) {
-            ResponseBody body1 = response.body();
-            String content;
-            if (body1 != null){
-                content = body1.string();
-                //获取access_token
-                JSONObject object = JSONObject.parseObject(content);
-                String s = "access_token";
-                return object.getString(s);
-            }
-            return "";
-        } catch (IOException e) {
-            log.error("获取token失败:[{}]", e.getMessage());
-            throw new CustomizeException(e.getMessage());
-        }
-        
-        
-    }
-    
-    
 }

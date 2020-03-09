@@ -1,4 +1,4 @@
-package com.xlx.thirdpartoauth.dto;
+package com.xlx.thirdpartoauth.entity;
 
 /**
  * QQ用户信息
